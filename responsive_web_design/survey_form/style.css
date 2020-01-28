@@ -1,0 +1,86 @@
+/* =============================
+
+1 - Imported Fonts
+
+============================= */
+
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200&display=swap');
+
+/* =============================
+
+2 - General Properties
+
+============================= */
+
+body {
+	margin: 0;
+	min-width: 320px;
+	background-image: url('https://www.damienvassart.com/test/fcc/survey/img/bg.png');
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+}
+
+header {
+	text-align: center;
+	line-height: 0.5;
+	color: #FFFFFF;
+}
+
+h1 {
+	font-family: 'Oleo Script', cursive;
+	font-size: 4rem;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 420px;
+	margin: 1rem;
+	padding: 0 2rem 2rem 2rem;
+	background-color: hsla(0, 0%, 100%, 0.8);
+	border-radius: 5px;
+}
+
+
+/* =============================
+
+3 - Element-specific Properties
+
+============================= */
+
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+}
+
+#comments {
+	margin-bottom: 20px;
+}
+
+.form-block {
+	text-align: left;
+}
+
+.form-block-title {
+	font-weight: normal;
+}
+
+.form-elt {
+	display: block;
+}
+
+.form-field {
+	width: 100%;
+}
+
+/* =============================
+
+4 - Media Queries
+
+============================= */
