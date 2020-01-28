@@ -8,15 +8,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/DamienVassart/cours/tree/master/fCC/responsive_web_design/tribute_page"
+        "url": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/tribute_page"
     },
     "keywords": [],
     "author": "Damien Vassart",
     "license": "copyright",
     "bugs": {
-        "url": "https://github.com/DamienVassart/cours/tree/master/fCC/responsive_web_design/tribute_page/issues"
+        "url": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/tribute_page"
     },
-    "homepage": "https://github.com/DamienVassart/cours/tree/master/fCC/responsive_web_design/tribute_page",
+    "homepage": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/tribute_page",
     "devDependencies": {
         "serve": "^11.2.0"
     }

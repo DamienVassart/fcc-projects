@@ -1,22 +1,22 @@
 {
     "name": "html-template",
     "version": "1.0.0",
-    "description": "tribute page",
+    "description": "survey form",
     "main": "index.html",
     "scripts": {
         "start": "serve"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/DamienVassart/cours/tree/master/fCC/responsive_web_design/tribute_page"
+        "url": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/survey_form"
     },
     "keywords": [],
     "author": "Damien Vassart",
     "license": "copyright",
     "bugs": {
-        "url": "https://github.com/DamienVassart/cours/tree/master/fCC/responsive_web_design/tribute_page/issues"
+        "url": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/survey_form/issues"
     },
-    "homepage": "https://github.com/DamienVassart/cours/tree/master/fCC/responsive_web_design/tribute_page",
+    "homepage": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/survey_form",
     "devDependencies": {
         "serve": "^11.2.0"
     }
