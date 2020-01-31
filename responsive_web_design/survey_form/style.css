@@ -5,7 +5,6 @@
 ============================= */
 
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script&display=swap");
-
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:200&display=swap");
 
@@ -16,34 +15,38 @@
 ============================= */
 
 body {
-  margin: 0;
-  min-width: 320px;
-  background-image: url("/img/bg.png");
-  font-family: "Oswald", sans-serif;
-  font-weight: 200;
+    margin: 0;
+    min-width: 320px;
+    /* https://cssgradient.io/ */
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    font-family: "Oswald", sans-serif;
+    font-weight: 200;
 }
 
 header {
-  text-align: center;
-  line-height: 0.5;
-  color: #ffffff;
+    text-align: center;
+    line-height: 0.5;
+    color: #ffffff;
 }
 
 h1 {
-  font-family: "Oleo Script", cursive;
-  font-size: 4rem;
+    font-family: "Oleo Script", cursive;
+    font-size: 4rem;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 420px;
-  margin: 1rem;
-  padding: 0 2rem 2rem 2rem;
-  background-color: hsla(0, 0%, 100%, 0.8);
-  border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 420px;
+    margin: 1rem;
+    padding: 0 2rem 2rem 2rem;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 5px hsla(0, 0%, 20%, 0.1);
 }
+
 
 /* =============================
 
@@ -52,31 +55,54 @@ form {
 ============================= */
 
 #content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#description {
+    font-weight: normal;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #comments {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#dropdown {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background-color: white;
 }
 
 .form-block {
-  text-align: left;
+    text-align: left;
+    line-height: 1.8rem;
+    margin-bottom: 10px;
+    ;
 }
 
 .form-block-title {
-  font-weight: normal;
+    font-weight: normal;
+    line-height: 1rem;
 }
 
 .form-elt {
-  display: block;
+    display: block;
 }
 
 .form-field {
-  width: 100%;
+    width: 100%;
+    height: 1.5rem;
+    padding-left: 5px;
+    font-size: 1rem;
+    font-weight: lighter;
+    border: none;
+    border-bottom: 1px solid #CCC;
 }
+
 
 /* =============================
 
