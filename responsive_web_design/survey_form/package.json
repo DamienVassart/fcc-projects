@@ -1,7 +1,7 @@
 {
   "name": "survey-form",
   "version": "1.0.0",
-  "description": "",
+  "description": "Responsive Web Design project for freeCodeCamp",
   "main": "index.html",
   "scripts": {
     "start": "serve"
