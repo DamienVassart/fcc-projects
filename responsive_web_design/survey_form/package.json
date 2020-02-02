@@ -1,23 +1,23 @@
 {
-  "name": "survey-form",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "start": "serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/survey_form"
-  },
-  "keywords": [],
-  "author": "Damien Vassart",
-  "license": "copyright",
-  "bugs": {
-    "url": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/survey_form/issues"
-  },
-  "homepage": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/survey_form",
-  "devDependencies": {
-    "serve": "^11.2.0"
-  }
+    "name": "survey-form",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.html",
+    "scripts": {
+        "start": "serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DamienVassart/fcc-projects/"
+    },
+    "keywords": [],
+    "author": "Damien Vassart",
+    "license": "copyright",
+    "bugs": {
+        "url": "https://github.com/DamienVassart/fcc-projects/issues"
+    },
+    "homepage": "https://github.com/DamienVassart/fcc-projects/tree/master/responsive_web_design/survey_form",
+    "devDependencies": {
+        "serve": "^11.2.0"
+    }
 }
