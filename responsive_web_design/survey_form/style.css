@@ -99,7 +99,6 @@ form {
     padding-left: 5px;
     font-size: 1rem;
     font-weight: lighter;
-    /* Will display a gradient on bottom border */
     border: 1px solid transparent;
     border-image-source: linear-gradient(to right, hsla(0, 100%, 80%, 0.7), hsla(240, 100%, 71%, 0.7));
     border-image-width: 1px;
