@@ -53,6 +53,10 @@ form {
     box-shadow: 0 10px 10px 5px hsla(0, 0%, 20%, 0.1);
 }
 
+textarea {
+    resize: none;
+}
+
 
 /* =============================
 
