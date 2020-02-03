@@ -74,6 +74,8 @@ form {
 
 #comments {
     margin-bottom: 20px;
+    padding-left: 5px;
+    border: 1px solid transparent;
 }
 
 #dropdown {
@@ -105,6 +107,7 @@ form {
     padding-left: 5px;
     font-size: 1rem;
     font-weight: lighter;
+    outline: none;
     border: 1px solid transparent;
     border-image-source: linear-gradient(to right, hsla(0, 100%, 80%, 0.7), hsla(240, 100%, 71%, 0.7));
     border-image-width: 1px;
