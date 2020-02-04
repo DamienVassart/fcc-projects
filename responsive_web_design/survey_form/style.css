@@ -23,8 +23,11 @@
 body {
     margin: 0;
     min-width: 320px;
-    /* https://cssgradient.io/ */
     background-image: linear-gradient(45deg, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+body,
+select {
     font-family: "Oswald", sans-serif;
     font-weight: 200;
 }
@@ -53,6 +56,10 @@ form {
     box-shadow: 0 10px 10px 5px hsla(0, 0%, 20%, 0.1);
 }
 
+select {
+    font-size: 0.9rem;
+}
+
 textarea {
     resize: none;
 }
@@ -64,36 +71,10 @@ textarea {
 
 ============================= */
 
-#content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-}
-
-#description {
-    font-weight: normal;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-#comments {
-    margin-bottom: 20px;
-    padding-left: 5px;
-    border: 1px solid transparent;
-}
-
-#dropdown {
-    width: 100%;
-    height: 2rem;
-    border: none;
-    background-color: white;
-}
-
 .form-block {
     text-align: left;
     line-height: 1.8rem;
     margin-bottom: 10px;
-    ;
 }
 
 .form-block-title {
@@ -106,15 +87,45 @@ textarea {
 }
 
 .form-field {
-    width: 100%;
+    width: 98%;
     height: 1.5rem;
     padding-left: 5px;
     font-size: 1rem;
     font-weight: lighter;
     outline: none;
-    border: 1px solid transparent;
+    border-width: 1px;
+    border-style: solid;
     border-image-source: linear-gradient(to right, hsla(0, 100%, 80%, 0.7), hsla(240, 100%, 71%, 0.7));
     border-image-width: 1px;
     border-image-slice: 0 0 1 0;
     border-image-outset: 1;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#description {
+    color: midnightblue;
+}
+
+#dropdown {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 10px;
+    background-color: white;
+}
+
+#comments {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border: 1px solid transparent;
 }
