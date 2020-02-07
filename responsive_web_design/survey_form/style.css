@@ -41,12 +41,13 @@ form {
 header {
     text-align: center;
     line-height: 0.5;
-    color: #ffffff;
+    color: #191970;
 }
 
 h1 {
     font-family: "Oleo Script", cursive;
     font-size: 4rem;
+    color: #ffffff;
     text-shadow: 0 0 0 rgba(0, 0, 0, 0.2), 0 2px 0 rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -63,6 +64,9 @@ form {
 }
 
 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     font-size: 0.9rem;
 }
 
@@ -104,12 +108,12 @@ textarea {
     color: #191970;
 }
 
-.basic-info {
+.info-elt {
     display: block;
     margin-bottom: 5px;
 }
 
-.form-elt {
+.select-elt {
     display: flex;
     align-items: center;
 }
@@ -129,6 +133,20 @@ textarea {
     border-image-outset: 1;
 }
 
+.area-select {
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+}
+
+.area-select::after {
+    content: '\25BE';
+    color: #040439;
+    position: absolute;
+    right: 2%;
+    top: 0;
+}
+
 #content {
     display: flex;
     flex-direction: column;
@@ -136,18 +154,11 @@ textarea {
     margin: auto;
 }
 
-#description {
-    color: #191970;
-}
-
 #dropdown {
     width: 100%;
     height: 2rem;
     border: none;
     outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     padding-left: 10px;
     background-color: white;
 }

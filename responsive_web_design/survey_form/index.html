@@ -20,43 +20,45 @@
         <form id="survey-form">
             <div class="form-block">
                 <p class="form-block-title">Your info: </p>
-                <div class="basic-info"><label id="name-label" for="name">* Your Name: </label><input type="text" name="name" id="name" class="form-field" placeholder="John Doe" required></div>
-                <div class="basic-info"><label id="email-label" for="email">* Your e-mail address: </label><input type="email" name="email" id="email" class="form-field" placeholder="email@example.com" required></div>
-                <div class="basic-info"><label id="number-label" for="number">Your age: </label><input type="number" name="number" id="number" class="form-field" min="18" max="100" placeholder="18-100"></div>
+                <div class="info-elt"><label id="name-label" for="name">* Your Name: </label><input type="text" name="name" id="name" class="form-field" placeholder="John Doe" required></div>
+                <div class="info-elt"><label id="email-label" for="email">* Your e-mail address: </label><input type="email" name="email" id="email" class="form-field" placeholder="email@example.com" required></div>
+                <div class="info-elt"><label id="number-label" for="number">Your age: </label><input type="number" name="number" id="number" class="form-field" min="18" max="100" placeholder="18-100"></div>
 
 
                 <label>Your area of residence: </label>
-                <select id="dropdown">
-						<option disabled selected value>-- Select --</option>
-						<option value="NA">North America</option>
-						<option value="LA">Latin America</option>
-						<option value="EU">Europe</option>
-						<option value="AF">Africa</option>
-						<option value="AS">Asia</option>
-						<option value="AU">Australia</option>
-					</select>
+                <div class="area-select">
+                    <select id="dropdown">
+                        <option disabled selected value>-- Select --</option>
+                        <option value="NA">North America</option>
+                        <option value="LA">Latin America</option>
+                        <option value="EU">Europe</option>
+                        <option value="AF">Africa</option>
+                        <option value="AS">Asia</option>
+                        <option value="AU">Australia</option>
+                    </select>
+                </div>
             </div>
 
             <div class="form-block">
                 <p class="form-block-title">You want to receive updates: </p>
-                <div class="form-elt"><input type="radio" id="daily" name="updates"><label>Daily</label></div>
-                <div class="form-elt"><input type="radio" id="weekly" name="updates" checked><label>Weekly</label></div>
-                <div class="form-elt"><input type="radio" id="monthly" name="updates"><label>Monthly</label></div>
-                <div class="form-elt"><input type="radio" id="no" name="updates"><label>No, thanks</label></div>
+                <div class="select-elt"><input type="radio" id="daily" name="updates"><label>Daily</label></div>
+                <div class="select-elt"><input type="radio" id="weekly" name="updates" checked><label>Weekly</label></div>
+                <div class="select-elt"><input type="radio" id="monthly" name="updates"><label>Monthly</label></div>
+                <div class="select-elt"><input type="radio" id="no" name="updates"><label>No, thanks</label></div>
             </div>
 
             <div class="form-block">
                 <p class="form-block-title">What are your favorite subjects ?</p>
-                <div class="form-elt"><input type="checkbox" name="interests" value="health"><label>Health</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="psychology"><label>Psychology</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="self-improvement"><label>Self-improvement</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="food"><label>Food</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="apprenticeship"><label>Apprenticeship</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="tech"><label>Technology</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="litteracy"><label>Litteracy</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="music"><label>Music</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="arts"><label>Visual Arts</label></div>
-                <div class="form-elt"><input type="checkbox" name="interests" value="sports"><label>Sports</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="health"><label>Health</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="psychology"><label>Psychology</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="self-improvement"><label>Self-improvement</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="food"><label>Food</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="apprenticeship"><label>Apprenticeship</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="tech"><label>Technology</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="litteracy"><label>Litteracy</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="music"><label>Music</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="arts"><label>Visual Arts</label></div>
+                <div class="select-elt"><input type="checkbox" name="interests" value="sports"><label>Sports</label></div>
             </div>
 
             <p class="form-block-title">Feel free to tell us anything you find relevant: </p>
