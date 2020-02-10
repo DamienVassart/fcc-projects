@@ -14,6 +14,10 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:200&display=swap");
 
+/* Button */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
 /* =============================
 
 2 - General Properties
@@ -72,6 +76,29 @@ select {
 
 textarea {
     resize: none;
+    outline: none;
+}
+
+button {
+    padding: 10px 40px 10px 40px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    color: white;
+    background-image: linear-gradient(to top, hsl(340, 100%, 45%), hsl(340, 100%, 50%));
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, hsl(340, 100%, 50%), hsl(340, 100%, 55%));
+}
+
+button:active {
+    outline: none;
+    background-image: linear-gradient(to bottom, hsl(340, 100%, 45%), hsl(340, 100%, 50%));
 }
 
 
@@ -164,7 +191,7 @@ textarea {
 }
 
 #comments {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding-left: 5px;
     border: 1px solid transparent;
 }
