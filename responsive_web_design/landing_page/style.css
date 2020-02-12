@@ -1,0 +1,66 @@
+/* =================================================
+
+1 - Imported Fonts
+
+================================================= */
+
+
+/* =================================================
+
+2 - Global Properties
+
+================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header img {
+    position: fixed;
+    left: 20px;
+}
+
+nav {
+    position: fixed;
+    right: 10%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+
+/* =================================================
+
+3 - Element-Specific Properties
+
+================================================= */
+
+
+/* =================================================
+
+4 - Media Queries
+
+================================================= */
+
+@media (max-width: 400px) {}
