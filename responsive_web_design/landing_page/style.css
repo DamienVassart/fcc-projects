@@ -14,39 +14,49 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
+}
+
+html {
+    height: 100%;
 }
 
 body {
     margin: auto;
+    min-width: 320px;
+    background-image: linear-gradient(to top, hsl(220, 58%, 15%) 0%, hsl(220, 57%, 25%) 100%);
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 header img {
     position: fixed;
     left: 20px;
+    top: 5%;
 }
 
 nav {
     position: fixed;
-    right: 10%;
+    right: 20%;
+    top: 10%;
 }
 
-nav a {
-    text-decoration: none;
-}
-
-ul {
+nav ul {
     display: flex;
     flex-direction: row;
 }
 
-li {
+nav li {
     list-style: none;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 
@@ -62,5 +72,3 @@ li {
 4 - Media Queries
 
 ================================================= */
-
-@media (max-width: 400px) {}
