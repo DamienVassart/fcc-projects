@@ -17,15 +17,11 @@
     color: white;
 }
 
-html {
-    /*height: 100%;*/
-}
-
 body {
     margin: auto;
-    /*height: 100%;*/
     min-width: 320px;
     background-image: linear-gradient(to top, hsl(220, 40%, 15%) 0%, hsl(220, 40%, 25%) 100%);
+    background-attachment: fixed;
 }
 
 h1,
@@ -39,22 +35,26 @@ a {
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 5;
+    /*margin-bottom: 100px;*/
+    background-image: linear-gradient(to bottom, hsla(220, 40%, 25%, 1) 0%, hsla(220, 40%, 24%, 1) 99%, hsla(220, 40%, 20%, 0) 100%);
 }
 
 header img {
-    position: fixed;
+    position: relative;
+    float: left;
     left: 20px;
-    top: 5%;
+    top: 30%;
 }
 
 nav {
-    position: fixed;
-    right: 20%;
-    top: 5%;
-    z-index: 2;
+    position: relative;
+    float: right;
+    right: 30%;
+    top: 50%;
 }
 
 nav ul {
@@ -86,12 +86,18 @@ nav li:nth-child(-n+2) {
 }
 
 #content {
+    position: relative;
+    top: 100px;
     margin: 0 50px;
 }
 
 #buy,
 #subscribe {
     margin-top: 20px;
+}
+
+#buy div:nth-child(-n+3) {
+    margin-right: 10px;
 }
 
 #video {
