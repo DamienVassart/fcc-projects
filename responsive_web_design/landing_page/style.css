@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-size: 16px;
 }
 
 body {
@@ -22,6 +23,14 @@ body {
     min-width: 320px;
     background-image: linear-gradient(to top, hsl(220, 40%, 15%) 0%, hsl(220, 40%, 25%) 100%);
     background-attachment: fixed;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 h1,
@@ -42,7 +51,7 @@ header {
     width: 100%;
     height: 140px;
     z-index: 5;
-    background-image: linear-gradient(to bottom, hsla(220, 40%, 25%, 1) 0%, hsla(220, 40%, 24%, 1) 100%, hsla(220, 40%, 25%, 0.5) 100%);
+    background-image: linear-gradient(to bottom, hsla(220, 40%, 25%, 1) 0%, hsla(220, 40%, 23%, 1) 99%, hsla(220, 40%, 25%, 0.5) 100%);
 }
 
 header img {
@@ -80,27 +89,42 @@ nav li:nth-child(-n+2) {
 
 ================================================= */
 
-.model {
-    display: inline-block;
-    width: 350px;
-    height: 550px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
 #content {
     position: relative;
     top: 140px;
     margin: 0 50px;
 }
 
+#buy {
+    display: grid;
+    grid-template-rows: 40px 550px;
+    grid-template-columns: repeat(3, 350px);
+    column-gap: 10px;
+}
+
+.buy-title {
+    grid-row: 1;
+}
+
+.model-1,
+.model-2,
+.model-3 {
+    grid-row: 2;
+}
+
+.model {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
 #buy,
 #subscribe {
     margin-top: 20px;
-}
-
-#buy div:nth-child(-n+3) {
-    margin-right: 10px;
 }
 
 #video {
@@ -135,5 +159,22 @@ nav li:nth-child(-n+2) {
     }
     #content {
         top: 170px;
+    }
+}
+
+@media (max-width: 1195px) {
+    #buy {
+        display: flex;
+        flex-direction: column;
+    }
+    .model {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 550px;
+        height: 350px;
+    }
+    #buy div:nth-child(-n+3) {
+        margin-bottom: 10px;
     }
 }
