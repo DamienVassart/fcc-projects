@@ -17,6 +17,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
+/* Price Tags */
+
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+
 /* =================================================
 
 2 - Global Properties
@@ -36,6 +40,7 @@ body {
     background-image: linear-gradient(to top, hsl(220, 60%, 15%) 0%, hsl(200, 80%, 25%) 85%);
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: auto;
 }
 
 h1 {
@@ -146,14 +151,24 @@ nav li:nth-child(-n+2) {
     align-items: center;
     width: 350px;
     height: 550px;
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: #fff;
     border-radius: 5px;
 }
 
+.price {
+    width: 100%;
+    margin-top: 10px;
+    color: #ff0000;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+}
+
 #buy,
 #subscribe {
-    margin-top: 20px;
+    margin: 20px 0 100px 0;
 }
 
 #video {
@@ -169,7 +184,7 @@ nav li:nth-child(-n+2) {
 
 ================================================= */
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
     header {
         display: flex;
         flex-direction: column;
@@ -202,7 +217,7 @@ nav li:nth-child(-n+2) {
     }
 }
 
-@media (max-width: 1195px) {
+@media screen and (max-width: 1195px) {
     #buy {
         display: flex;
         flex-direction: column;
