@@ -21,6 +21,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
 
+/* Buttons */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
 /* =================================================
 
 2 - Global Properties
@@ -146,25 +150,64 @@ nav li:nth-child(-n+2) {
 }
 
 .model {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
     height: 550px;
     margin-top: 20px;
-    padding-top: 20px;
     background-color: #fff;
     border-radius: 5px;
 }
 
+.img-container {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 0;
+    background-image: radial-gradient(#999, #000);
+    border-radius: 5px 5px 0 0;
+}
+
+.model-name {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #ff7700;
+}
+
 .price {
     width: 100%;
-    margin-top: 10px;
     color: #ff0000;
     padding: 10px 0;
     text-align: center;
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 3rem;
+}
+
+.description li {
+    color: #000;
+    line-height: 2rem;
+}
+
+.cta-btn {
+    margin-top: 30px;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    appearance: none;
+    border: none;
+    outline: none;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    background-color: #ff7700;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.2rem;
 }
 
 #buy,
@@ -202,9 +245,15 @@ nav li:nth-child(-n+2) {
     width: 120px;
     border-radius: 0 10px 10px 0;
     background-image: linear-gradient(to top, hsl(42, 100%, 55%), hsl(42, 100%, 67%));
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
     text-transform: uppercase;
-    font-weight: bold;
     color: hsl(42, 80%, 20%);
+}
+
+#submit:active {
+    background-image: linear-gradient(to bottom, hsl(42, 100%, 55%), hsl(42, 100%, 67%));
 }
 
 
@@ -253,14 +302,41 @@ nav li:nth-child(-n+2) {
         flex-direction: column;
     }
     .model {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        width: 550px;
+        display: grid;
+        grid-template-columns: 295px 275px;
+        grid-template-rows: 164px 28px 158px;
+        width: 590px;
         height: 350px;
-        padding-left: 10px;
     }
-    #buy div:nth-child(-n+3) {
-        margin-bottom: 10px;
+    .img-container {
+        border-radius: 5px 0 0 0;
+    }
+    /*.model img {
+        margin-top: 0;
+        padding-left: 20px;
+    }*/
+    .price {
+        box-sizing: border-box;
+        height: 158px;
+        padding-top: 55px;
+        background-color: #ffcc55;
+        border-radius: 0 0 0 5px;
+    }
+    .model img,
+    .model-name,
+    .price {
+        grid-column: 1;
+    }
+    .description {
+        grid-row: 1;
+        padding-top: 20px;
+    }
+    .cta-btn {
+        margin-top: 0;
+    }
+    .description,
+    .cta-btn {
+        grid-column: 2;
+        margin: auto;
     }
 }
