@@ -83,7 +83,7 @@ header {
 header img {
     height: 100px;
     width: 200px;
-    background-color: #ff7700;
+    /*background-color: #ff7700;*/
     position: relative;
     top: 20px;
     left: 50px;
