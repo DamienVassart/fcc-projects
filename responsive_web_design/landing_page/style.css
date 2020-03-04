@@ -109,6 +109,18 @@ nav li:nth-child(-n+2) {
     margin-right: 2rem;
 }
 
+footer {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    padding: 20px;
+    border-top: 1px dotted #ffcc55;
+    background-color: black;
+}
+
 
 /* =================================================
 
@@ -116,8 +128,14 @@ nav li:nth-child(-n+2) {
 
 ================================================= */
 
+#wrapper {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 300px;
+}
+
 #content {
-    position: absolute;
+    position: relative;
     top: 140px;
     z-index: 1;
     margin: 0 50px;
@@ -128,7 +146,8 @@ nav li:nth-child(-n+2) {
 }
 
 #content p,
-#content ul {
+#content ul,
+footer {
     font-family: "Raleway", sans-serif;
 }
 
