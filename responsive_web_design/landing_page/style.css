@@ -69,6 +69,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: white;
+}
+
 header {
     position: fixed;
     display: flex;
@@ -109,16 +113,22 @@ nav li:nth-child(-n+2) {
     margin-right: 2rem;
 }
 
+form {
+    margin-top: 20px;
+}
+
 footer {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100px;
     padding: 20px;
-    border-top: 1px dotted #ffcc55;
-    background-color: black;
+    background-color: hsl(220, 60%, 10%);
 }
 
 
@@ -230,6 +240,10 @@ footer {
     font-size: 1.2rem;
 }
 
+.cta-btn:active {
+    background-color: hsl(28, 100%, 40%);
+}
+
 #buy,
 #subscribe {
     margin: 20px 0 100px 0;
@@ -274,6 +288,26 @@ footer {
 
 #submit:active {
     background-image: linear-gradient( to bottom, hsl(42, 100%, 55%), hsl(42, 100%, 67%));
+}
+
+.footer-content {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.email-us,
+.social-icn {
+    color: #ffcc55;
+    cursor: pointer;
+}
+
+.social-icn {
+    height: 30%;
+}
+
+.email-us:hover,
+.social-icn:hover {
+    filter: saturate(0) brightness(2);
 }
 
 
@@ -346,7 +380,7 @@ footer {
         height: 156px;
         padding-top: 54px;
         margin: 0;
-        background-color: #ffcc55;
+        background-color: hsl(220, 80%, 90%);
         border-radius: 0 0 0 5px;
     }
     .model img,
