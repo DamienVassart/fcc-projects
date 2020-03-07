@@ -14,25 +14,29 @@
             <!-- Text description of the documentation page -->
         </header>
         <ul>
-            <li><a class="nav-link" href="#setup_and_config">Section 1</a></li>
-            <li><a class="nav-link" href="#getting_creating">Section 2</a></li>
-            <li><a class="nav-link" href="#branching_merging">Section 3</a></li>
-            <li><a class="nav-link" href="#sharing_updating">Section 4</a></li>
-            <li><a class="nav-link" href="#inspection_comparison">Section 5</a></li>
-            <li><a class="nav-link" href="#patching">Section 5</a></li>
-            <li><a class="nav-link" href="#debugging">Section 5</a></li>
-            <li><a class="nav-link" href="#email">Section 5</a></li>
-            <li><a class="nav-link" href="#administration">Section 5</a></li>
-            <li><a class="nav-link" href="#server_admin">Section 5</a></li>
-            <li><a class="nav-link" href="#plumbing_commands">Section 5</a></li>
+            <li><a class="nav-link" href="#setup_and_config">Setup and Config</a></li>
+            <li><a class="nav-link" href="#getting_creating">Getting and Creating projects</a></li>
+            <li><a class="nav-link" href="#basic_snapshotting">Basic Snapshotting</a></li>
+            <li><a class="nav-link" href="#branching_merging">Branching and Merging</a></li>
+            <li><a class="nav-link" href="#sharing_updating">Sharing and updating Projects</a></li>
+            <li><a class="nav-link" href="#inspection_comparison">Inspection and Comparison</a></li>
+            <li><a class="nav-link" href="#patching">Patching</a></li>
+            <li><a class="nav-link" href="#debugging">Debugging</a></li>
+            <li><a class="nav-link" href="#email">E-mail</a></li>
+            <li><a class="nav-link" href="#administration">Administration</a></li>
+            <li><a class="nav-link" href="#server_admin">Server Admin</a></li>
+            <li><a class="nav-link" href="#plumbing_commands">Plumbing Commands</a></li>
         </ul>
     </nav>
     <main id="main-doc">
         <section class="main-section" id="setup_and_config">
             <header>
-                <h3 class="section-heading">Setup and Config</h3>
+                <h2 class="section-heading">Setup and Config</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">git</h3>
+            <h3 class="git-command">config</h3>
+            <h3 class="git-command">help</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -42,9 +46,32 @@
         </section>
         <section class="main-section" id="getting_creating">
             <header>
-                <h3 class="section-heading">Getting and Creating projects</h3>
+                <h2 class="section-heading">Getting and Creating projects</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">init</h3>
+            <h3 class="git-command">clone</h3>
+            <p></p>
+            <p></p>
+            <code></code>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
+        <section class="main-section" id="basic_snapshotting">
+            <header>
+                <h2 class="section-heading">Basic Snapshotting</h2>
+                <!-- Text description of the section-->
+            </header>
+            <h3 class="git-command">add</h3>
+            <h3 class="git-command">status</h3>
+            <h3 class="git-command">diff</h3>
+            <h3 class="git-command">commit</h3>
+            <h3 class="git-command">notes</h3>
+            <h3 class="git-command">restore</h3>
+            <h3 class="git-command">reset</h3>
+            <h3 class="git-command">rm</h3>
+            <h3 class="git-command">mv</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -54,9 +81,18 @@
         </section>
         <section class="main-section" id="branching_merging">
             <header>
-                <h3 class="section-heading">Branching and Merging</h3>
+                <h2 class="section-heading">Branching and Merging</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">branch</h3>
+            <h3 class="git-command">checkout</h3>
+            <h3 class="git-command">switch</h3>
+            <h3 class="git-command">merge</h3>
+            <h3 class="git-command">mergetool</h3>
+            <h3 class="git-command">log</h3>
+            <h3 class="git-command">stash</h3>
+            <h3 class="git-command">tag</h3>
+            <h3 class="git-command">worktree</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -66,9 +102,14 @@
         </section>
         <section class="main-section" id="sharing_updating">
             <header>
-                <h3 class="section-heading">Sharing and updating Projects</h3>
+                <h2 class="section-heading">Sharing and updating Projects</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">fetch</h3>
+            <h3 class="git-command">pull</h3>
+            <h3 class="git-command">push</h3>
+            <h3 class="git-command">remote</h3>
+            <h3 class="git-command">submodule</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -78,9 +119,16 @@
         </section>
         <section class="main-section" id="inspection_comparison">
             <header>
-                <h3 class="section-heading">Inspection and Comparison</h3>
+                <h2 class="section-heading">Inspection and Comparison</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">show</h3>
+            <h3 class="git-command">log</h3>
+            <h3 class="git-command">diff</h3>
+            <h3 class="git-command">difftool</h3>
+            <h3 class="git-command">range-diff</h3>
+            <h3 class="git-command">shortlog</h3>
+            <h3 class="git-command">describe</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -90,9 +138,14 @@
         </section>
         <section class="main-section" id="patching">
             <header>
-                <h3 class="section-heading">Patching</h3>
+                <h2 class="section-heading">Patching</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">apply</h3>
+            <h3 class="git-command">cherry-pick</h3>
+            <h3 class="git-command">diff</h3>
+            <h3 class="git-command">rebase</h3>
+            <h3 class="git-command">describe</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -102,9 +155,12 @@
         </section>
         <section class="main-section" id="debugging">
             <header>
-                <h3 class="section-heading">Debugging</h3>
+                <h2 class="section-heading">Debugging</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">bisect</h3>
+            <h3 class="git-command">blame</h3>
+            <h3 class="git-command">grep</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -114,9 +170,14 @@
         </section>
         <section class="main-section" id="email">
             <header>
-                <h3 class="section-heading">E-mail</h3>
+                <h2 class="section-heading">E-mail</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">am</h3>
+            <h3 class="git-command">apply</h3>
+            <h3 class="git-command">format-patch</h3>
+            <h3 class="git-command">send-email</h3>
+            <h3 class="git-command">request-pull</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -126,9 +187,11 @@
         </section>
         <section class="main-section" id="external_systems">
             <header>
-                <h3 class="section-heading">External Systems</h3>
+                <h2 class="section-heading">External Systems</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">svn</h3>
+            <h3 class="git-command">fast-import</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -138,9 +201,17 @@
         </section>
         <section class="main-section" id="administration">
             <header>
-                <h3 class="section-heading">Administration</h3>
+                <h2 class="section-heading">Administration</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">clean</h3>
+            <h3 class="git-command">gc</h3>
+            <h3 class="git-command">fsck</h3>
+            <h3 class="git-command">reflog</h3>
+            <h3 class="git-command">filter-branch</h3>
+            <h3 class="git-command">instaweb</h3>
+            <h3 class="git-command">archive</h3>
+            <h3 class="git-command">bundle</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -150,9 +221,11 @@
         </section>
         <section class="main-section" id="server_admin">
             <header>
-                <h3 class="section-heading">Server Admin</h3>
+                <h2 class="section-heading">Server Admin</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">daemon</h3>
+            <h3 class="git-command">update-server-info</h3>
             <p></p>
             <p></p>
             <code></code>
@@ -162,9 +235,29 @@
         </section>
         <section class="main-section" id="plumbing_commands">
             <header>
-                <h3 class="section-heading">Plumbing Commands</h3>
+                <h2 class="section-heading">Plumbing Commands</h2>
                 <!-- Text description of the section-->
             </header>
+            <h3 class="git-command">cat-file</h3>
+            <h3 class="git-command">check-ignore</h3>
+            <h3 class="git-command">checkout-index</h3>
+            <h3 class="git-command">commit-tree</h3>
+            <h3 class="git-command">count-objects</h3>
+            <h3 class="git-command">diff-index</h3>
+            <h3 class="git-command">for-each-ref</h3>
+            <h3 class="git-command">hash-object</h3>
+            <h3 class="git-command">ls-files</h3>
+            <h3 class="git-command">ls-tree</h3>
+            <h3 class="git-command">merge-base</h3>
+            <h3 class="git-command">read-tree</h3>
+            <h3 class="git-command">rev-list</h3>
+            <h3 class="git-command">rev-parse</h3>
+            <h3 class="git-command">show-ref</h3>
+            <h3 class="git-command">symbolic-ref</h3>
+            <h3 class="git-command">update-index</h3>
+            <h3 class="git-command">update-ref</h3>
+            <h3 class="git-command">verify-pack</h3>
+            <h3 class="git-command">write-tree</h3>
             <p></p>
             <p></p>
             <code></code>
