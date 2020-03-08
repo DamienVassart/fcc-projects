@@ -22,7 +22,6 @@ html {
 
 body {
     position: relative;
-    background-color: #bbb;
 }
 
 nav {
@@ -47,6 +46,10 @@ nav li {
 main {
     margin-left: 290px;
     padding: 20px 50px;
+}
+
+main li {
+    list-style: none;
 }
 
 

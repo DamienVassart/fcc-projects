@@ -35,14 +35,40 @@
                 <!-- Text description of the section-->
             </header>
             <h3 class="git-command">git</h3>
+            <h6 class="git-command-section">What it does</h6>
+            <p class="git-command-p">This command will display all available options as well as the most common commands.</p>
+            <h6 class="git-command-section">Synopsis</h6>
+            <code>
+                <strong>git</strong> [--version] [--help] [-C &lt;path&gt;] [-c &lt;name&gt;=&lt;value&gt;]<br>
+                    [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]<br>
+                        [-p|--paginate|-P|--no-pager] [--no-replace-objects] [--bare]<br>
+                        [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]<br>
+                            [--super-prefix=&lt;path&gt;]<br>
+                                &lt;command&gt; [&lt;args&gt;]<br>
+            </code>
+            <h6 class="git-command-section">Options</h6>
+            <ul>
+                <li class="git-option">--version</li>
+                <p>Prints the Git suite version that the git program came from.</p>
+                <li class="git-option">--help</li>
+                <p>Prints the synopsis and a list of the most commonly used commands.</p>
+                <li class="git-option">-C &lt;path&gt;</li>
+                <p>Run as if git was started in &lt;path&gt; instead of the current working directory. </p>
+                <li class="git-option">-c &lt;name&gt;=&lt;value&gt;</li>
+                <p>Pass a configuration parameter to the command. The value given will override values from configuration files. The &lt;name&gt; is expected in the same format as listed by git config (subkeys separated by dots).</p>
+                <li class="git-option">--exec-path[=&lt;path&gt;]</li>
+                <p>Path to wherever your core Git programs are installed. This can also be controlled by setting the GIT_EXEC_PATH environment variable. If no path is given, git will print the current setting and then exit.</p>
+                <li class="git-option">--html-path</li>
+                <p>Print the path, without trailing slash, where Git’s HTML documentation is installed and exit.</p>
+                <li class="git-option">--man-path</li>
+                <p>Print the manpath for the man pages for this version of Git and exit.</p>
+                <li class="git-option">--info-path</li>
+                <p>Print the path where the Info files documenting this version of Git are installed and exit.</p>
+                <li class="git-option">--paginate</li>
+                <p>Pipe all output into less (or if set, $PAGER) if standard output is a terminal.</p>
+            </ul>
             <h3 class="git-command">config</h3>
             <h3 class="git-command">help</h3>
-            <p></p>
-            <p></p>
-            <code></code>
-            <ul>
-                <li></li>
-            </ul>
         </section>
         <section class="main-section" id="getting_creating">
             <header>
