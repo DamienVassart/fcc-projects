@@ -7,7 +7,7 @@
 
 /* =================================================
 
-2 - General properties
+2 - Global properties
 
 ================================================= */
 
@@ -23,6 +23,13 @@ html {
 body {
     position: relative;
 }
+
+
+/* =================================================
+
+3 - Element-specific properties
+
+================================================= */
 
 nav {
     position: fixed;
@@ -52,15 +59,35 @@ main li {
     list-style: none;
 }
 
+h1 {
+    font-size: 2.3rem;
+}
 
-/* =================================================
+h2 {
+    font-size: 1.8rem;
+}
 
-3 - Element-specific properties
+h3 {
+    font-size: 1.6rem;
+}
 
-================================================= */
+h4 {
+    font-size: 1.2rem;
+}
 
-.main-section header {
+.main-section header,
+.main-section h3,
+.git-command-p,
+code {
     margin-bottom: 20px;
+}
+
+.main-section h4 {
+    margin-bottom: 10px;
+}
+
+.options {
+    margin-top: 20px;
 }
 
 
