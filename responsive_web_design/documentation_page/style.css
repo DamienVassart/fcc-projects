@@ -5,6 +5,14 @@
 ================================================= */
 
 
+/* Body text */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+/* Code samples */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap');
+
 /* =================================================
 
 2 - Global properties
@@ -17,11 +25,12 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
     position: relative;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -75,6 +84,25 @@ h4 {
     font-size: 1.2rem;
 }
 
+.code-sample {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #114477;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 5px;
+}
+
+.git-option {
+    display: inline-block;
+    padding: 1px 5px;
+    background-color: #ddd;
+    font-family: 'Source Code Pro', monospace;
+    color: #22bb55;
+    font-weight: 700;
+    border-radius: 2px;
+}
+
 .main-section header,
 .main-section h3,
 .git-command-p,
@@ -84,6 +112,10 @@ code {
 
 .main-section h4 {
     margin-bottom: 10px;
+}
+
+.code-indent {
+    margin-left: 2.4rem;
 }
 
 .options {
