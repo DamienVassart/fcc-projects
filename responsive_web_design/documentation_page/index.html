@@ -38,62 +38,58 @@
             <h4 class="git-command-section">What it does</h4>
             <p class="git-command-p">This command will display all available options as well as the most common commands.</p>
             <h4 class="git-command-section">Synopsis</h4>
-            <div class="code-sample">
-                <code>
-                    <strong>git</strong> [--version] [--help] [-C &lt;path&gt;] [-c &lt;name&gt;=&lt;value&gt;]<br>
-                        <span class = "code-indent">[--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]</span><br>
-                        <span class = "code-indent">[-p|--paginate|-P|--no-pager] [--no-replace-objects] [--bare]</span><br>
-                            <span class = "code-indent"></span>[--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]</span><br>
-                            <span class = "code-indent">[--super-prefix=&lt;path&gt;]</span><br>
-                                <span class = "code-indent">&lt;command&gt; [&lt;args&gt;]</span><br>
-                </code>
-            </div>
+            <pre class="code-sample">
+                <strong>git</strong> [--version] [--help] [-C &lt;path&gt;] [-c &lt;name&gt;=&lt;value&gt;]
+                <span class="code-indent">[--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]</span>
+                <span class="code-indent">[-p|--paginate|-P|--no-pager] [--no-replace-objects] [--bare]</span>
+                <span class="code-indent">[--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]</span>
+                <span class="code-indent">[--super-prefix=&lt;path&gt;]</span>
+                <span class="code-indent">&lt;command&gt; [&lt;args&gt;]</span>
+            </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li class="git-option">--version</li>
+                <li class="git-option"><code>--version</code></li>
                 <p class="git-command-p">Prints the Git suite version that the <strong>git</strong> program came from.</p>
-                <li class="git-option">--help</li>
+                <li class="git-option"><code>--help</code></li>
                 <p class="git-command-p">Prints the synopsis and a list of the most commonly used commands.</p>
-                <li class="git-option">-C &lt;path&gt;</li>
+                <li class="git-option"><code>-C &lt;path&gt;</code></li>
                 <p class="git-command-p">Run as if git was started in &lt;path&gt; instead of the current working directory. </p>
-                <li class="git-option">-c &lt;name&gt;=&lt;value&gt;</li>
+                <li class="git-option"><code>-c &lt;name&gt;=&lt;value&gt;</code></li>
                 <p class="git-command-p">Pass a configuration parameter to the command. The value given will override values from configuration files. The &lt;name&gt; is expected in the same format as listed by <strong>git config</strong> (subkeys separated by dots).</p>
-                <li class="git-option">--exec-path[=&lt;path&gt;]</li>
+                <li class="git-option"><code>--exec-path[=&lt;path&gt;]</code></li>
                 <p class="git-command-p">Path to wherever your core Git programs are installed. This can also be controlled by setting the GIT_EXEC_PATH environment variable. If no path is given, git will print the current setting and then exit.</p>
-                <li class="git-option">--html-path</li>
+                <li class="git-option"><code>--html-path</code></li>
                 <p class="git-command-p">Print the path, without trailing slash, where Git’s HTML documentation is installed and exit.</p>
-                <li class="git-option">--man-path</li>
+                <li class="git-option"><code>--man-path</code></li>
                 <p class="git-command-p">Print the manpath for the man pages for this version of Git and exit.</p>
-                <li class="git-option">--info-path</li>
+                <li class="git-option"><code>--info-path</code></li>
                 <p class="git-command-p">Print the path where the Info files documenting this version of Git are installed and exit.</p>
-                <li class="git-option">--paginate</li>
+                <li class="git-option"><code>--paginate</code></li>
                 <p class="git-command-p">Pipe all output into <strong>less</strong> (or if set, $PAGER) if standard output is a terminal.</p>
             </ul>
             <h3 class="git-command">help</h3>
             <h4 class="git-command-section">What it does</h4>
             <p class="git-command-p">This command will display git help information.</p>
             <h4 class="git-command-section">Synopsis</h4>
-            <div class="code-sample">
-                <code>
-                    <strong>git help</strong> [-a|--all [--[no-]verbose]] [-g|--guide]<br>
-                    <span class="code-indent">[-i|--info|-m|--man|-w|--web] [COMMAND|GUIDE]</span><br>
-                </code>
-            </div>
+            <pre class="code-sample">
+                <strong>git help</strong> [-a|--all [--[no-]verbose]] [-g|--guide]
+                <span class="code-indent">[-i|--info|-m|--man|-w|--web] [COMMAND|GUIDE]</span>
+            </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li class="git-option">--all</li>
+                <li class="git-option"><code>--all</code></li>
                 <p class="git-command-p">Prints all the available commands on the standard output. This option overrides any given command or guide name.</p>
-                <li class="git-option">--verbose</li>
+                <li class="git-option"><code>--verbose</code></li>
                 <p class="git-command-p">When used with <em>--all</em> print description for all recognized commands. This is the default.</p>
-                <li class="git-option">--config</li>
+                <li class="git-option"><code>--config</code></li>
                 <p class="git-command-p">List all available configuration variables.</p>
-                <li class="git-option">--guides</li>
+                <li class="git-option"><code>--guides</code></li>
                 <p class="git-command-p">Prints a list of useful guides on the standard output. This option overrides any given command or guide name.</p>
-                <li class="git-option">--info</li>
+                <li class="git-option"><code>--info</code></li>
                 <p class="git-command-p">Display manual page for the command in the <strong>info</strong> format. The <strong>info</strong> program will be used for that purpose.</p>
-                <li class="git-option">--man</li>
+                <li class="git-option"><code>--man</code></li>
                 <p class="git-command-p">Display manual page for the command in the <strong>man</strong> format. This option may be used to override a value set in the <em>help.format</em> configuration variable.</p>
-                <li class="git-option">--web</li>
+                <li class="git-option"><code>--web</code></li>
                 <p class="git-command-p">Display manual page for the command in the <strong>web</strong> (HTML) format. A web browser will be used for that purpose.</p>
             </ul>
         </section>
@@ -103,8 +99,20 @@
                 <!-- Text description of the section-->
             </header>
             <h3 class="git-command">init</h3>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">Create an empty Git repository or reinitialize an existing one.</p>
+            <h4 class="git-command-section">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git init</strong> [-q | --quiet] [--bare] [--template=&lt;template_directory&gt;]
+                <span class="code-indent">[--separate-git-dir &lt;git dir&gt;]</span>
+                <span class="code-indent">[--shared[=&lt;permissions&gt;]] [directory]</span>
+            </pre>
+            <h4 class="git-command-section options">Options</h4>
+            <ul>
+                <li class="git-option"><code></code></li>
+                <p class="git-command-p"></p>
+            </ul>
             <h3 class="git-command">clone</h3>
-            <p></p>
             <p></p>
             <code></code>
             <ul>
