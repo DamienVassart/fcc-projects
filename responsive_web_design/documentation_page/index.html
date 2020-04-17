@@ -109,8 +109,16 @@
             </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li class="git-option"><code></code></li>
-                <p class="git-command-p"></p>
+                <li class="git-option"><code>--quiet</code></li>
+                <p class="git-command-p">Only print error and warning messages; all other output will be suppressed.</p>
+                <li class="git-option"><code>--bare</code></li>
+                <p class="git-command-p">Create a bare repository. If <em>GIT_DIR</em> environment is not set, it is set to the current working directory.</p>
+                <li class="git-option"><code>--template=&lt;template_directory&gt;</code></li>
+                <p class="git-command-p">Specify the directory from which templates will be used. (See the "TEMPLATE DIRECTORY" section below.)</p>
+                <li class="git-option"><code>--separate-git-dir=&lt;git dir&gt;</git></code></li>
+                <p class="git-command-p">Instead of initializing the repository as a directory to either <em>$GIT_DIR</em> or <em>./.git/</em>, create a text file there containing the path to the actual repository. This file acts as filesystem-agnostic Git symbolic link to the
+                    repository.
+                    <br>If this is reinitialization, the repository will be moved to the specified path.</p>
             </ul>
             <h3 class="git-command">clone</h3>
             <p></p>
