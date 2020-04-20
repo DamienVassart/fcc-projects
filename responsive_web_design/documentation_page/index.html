@@ -29,11 +29,13 @@
         </ul>
     </nav>
     <main id="main-doc">
+
         <section class="main-section" id="setup_and_config">
             <header>
                 <h2 class="section-heading">Setup and Config</h2>
                 <!-- Text description of the section-->
             </header>
+
             <h3 class="git-command">git</h3>
             <h4 class="git-command-section">What it does</h4>
             <p class="git-command-p">This command will display all available options as well as the most common commands.</p>
@@ -67,6 +69,7 @@
                 <li class="git-option"><code>--paginate</code></li>
                 <p class="git-command-p">Pipe all output into <strong>less</strong> (or if set, $PAGER) if standard output is a terminal.</p>
             </ul>
+
             <h3 class="git-command">help</h3>
             <h4 class="git-command-section">What it does</h4>
             <p class="git-command-p">This command will display git help information.</p>
@@ -92,7 +95,9 @@
                 <li class="git-option"><code>--web</code></li>
                 <p class="git-command-p">Display manual page for the command in the <strong>web</strong> (HTML) format. A web browser will be used for that purpose.</p>
             </ul>
+
         </section>
+
         <section class="main-section" id="getting_creating">
             <header>
                 <h2 class="section-heading">Getting and Creating projects</h2>
@@ -120,13 +125,32 @@
                     repository.
                     <br>If this is reinitialization, the repository will be moved to the specified path.</p>
             </ul>
+
             <h3 class="git-command">clone</h3>
-            <p></p>
-            <code></code>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">Clone a repository into a new directory.</p>
+            <h4 class="git-command-section">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git clone</strong> [--template=&lt;template_directory&gt;]
+                <span class="code-indent">[-l] [-s] [--no-hardlinks] [-q] [-n] [--bare] [--mirror]</span>
+                <span class="code-indent">[-o &lt;name&gt;] [-b &lt;name&gt;] [-u &lt;upload-pack&gt;] [--reference &lt;repository&gt;]</span>
+                <span class="code-indent">[--dissociate] [--separate-git-dir &lt;git dir&gt;]</span>
+                <span class="code-indent">[--depth &lt;depth&gt;] [--[no-]single-branch] [--no-tags]</span>
+                <span class="code-indent">[--recurse-submodules[=&lt;pathspec&gt;]] [--[no-]shallow-submodules]</span>
+                <span class="code-indent">[--[no-]remote-submodules] [--jobs &lt;n&gt;] [--sparse] [--] &lt;repository&gt;</repository></span>
+                <span class="code-indent">[&lt;directory&gt;]</span>
+            </pre>
+            <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li></li>
+                <li class="git-option"><code></code>--local</li>
+                <p class="git-command-p">When the repository to clone from is on a local machine, this flag bypasses the normal "Git aware" transport mechanism and clones the repository by making a copy of HEAD and everything under objects and refs directories. The files under
+                    <em>.git/objects/</em> directory are hardlinked to save space when possible.<br>If the repository is specified as a local path (e.g., <em>/path/to/repo</em>), this is the default, and <em>--local</em> is essentially a no-op. If the
+                    repository is specified as a URL, then this flag is ignored (and we never use the local optimizations). Specifying <em>--no-local</em> will override the default when <em>/path/to/repo</em> is given, using the regular Git transport
+                    instead.</p>
             </ul>
+
         </section>
+
         <section class="main-section" id="basic_snapshotting">
             <header>
                 <h2 class="section-heading">Basic Snapshotting</h2>
