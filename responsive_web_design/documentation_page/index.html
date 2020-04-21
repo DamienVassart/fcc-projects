@@ -50,23 +50,23 @@
             </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li class="git-option"><code>--version</code></li>
+                <li class="git-option">--version</li>
                 <p class="git-command-p">Prints the Git suite version that the <strong>git</strong> program came from.</p>
-                <li class="git-option"><code>--help</code></li>
+                <li class="git-option">--help</li>
                 <p class="git-command-p">Prints the synopsis and a list of the most commonly used commands.</p>
-                <li class="git-option"><code>-C &lt;path&gt;</code></li>
+                <li class="git-option">-C &lt;path&gt;</li>
                 <p class="git-command-p">Run as if git was started in &lt;path&gt; instead of the current working directory. </p>
-                <li class="git-option"><code>-c &lt;name&gt;=&lt;value&gt;</code></li>
+                <li class="git-option">-c &lt;name&gt;=&lt;value&gt;</li>
                 <p class="git-command-p">Pass a configuration parameter to the command. The value given will override values from configuration files. The &lt;name&gt; is expected in the same format as listed by <strong>git config</strong> (subkeys separated by dots).</p>
-                <li class="git-option"><code>--exec-path[=&lt;path&gt;]</code></li>
+                <li class="git-option">--exec-path[=&lt;path&gt;]</li>
                 <p class="git-command-p">Path to wherever your core Git programs are installed. This can also be controlled by setting the GIT_EXEC_PATH environment variable. If no path is given, git will print the current setting and then exit.</p>
-                <li class="git-option"><code>--html-path</code></li>
+                <li class="git-option">--html-path</li>
                 <p class="git-command-p">Print the path, without trailing slash, where Git’s HTML documentation is installed and exit.</p>
-                <li class="git-option"><code>--man-path</code></li>
+                <li class="git-option">--man-path</li>
                 <p class="git-command-p">Print the manpath for the man pages for this version of Git and exit.</p>
-                <li class="git-option"><code>--info-path</code></li>
+                <li class="git-option">--info-path</li>
                 <p class="git-command-p">Print the path where the Info files documenting this version of Git are installed and exit.</p>
-                <li class="git-option"><code>--paginate</code></li>
+                <li class="git-option">--paginate</li>
                 <p class="git-command-p">Pipe all output into <strong>less</strong> (or if set, $PAGER) if standard output is a terminal.</p>
             </ul>
 
@@ -80,19 +80,19 @@
             </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li class="git-option"><code>--all</code></li>
+                <li class="git-option">--all</li>
                 <p class="git-command-p">Prints all the available commands on the standard output. This option overrides any given command or guide name.</p>
-                <li class="git-option"><code>--verbose</code></li>
-                <p class="git-command-p">When used with <em>--all</em> print description for all recognized commands. This is the default.</p>
-                <li class="git-option"><code>--config</code></li>
+                <li class="git-option">--verbose</li>
+                <p class="git-command-p">When used with <code>--all</code> print description for all recognized commands. This is the default.</p>
+                <li class="git-option">--config</li>
                 <p class="git-command-p">List all available configuration variables.</p>
-                <li class="git-option"><code>--guides</code></li>
+                <li class="git-option">--guides</li>
                 <p class="git-command-p">Prints a list of useful guides on the standard output. This option overrides any given command or guide name.</p>
-                <li class="git-option"><code>--info</code></li>
+                <li class="git-option">--info</li>
                 <p class="git-command-p">Display manual page for the command in the <strong>info</strong> format. The <strong>info</strong> program will be used for that purpose.</p>
-                <li class="git-option"><code>--man</code></li>
-                <p class="git-command-p">Display manual page for the command in the <strong>man</strong> format. This option may be used to override a value set in the <em>help.format</em> configuration variable.</p>
-                <li class="git-option"><code>--web</code></li>
+                <li class="git-option">--man</li>
+                <p class="git-command-p">Display manual page for the command in the <strong>man</strong> format. This option may be used to override a value set in the <code>help.format</code> configuration variable.</p>
+                <li class="git-option">--web</li>
                 <p class="git-command-p">Display manual page for the command in the <strong>web</strong> (HTML) format. A web browser will be used for that purpose.</p>
             </ul>
 
@@ -114,15 +114,15 @@
             </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li class="git-option"><code>--quiet</code></li>
+                <li class="git-option">--quiet</li>
                 <p class="git-command-p">Only print error and warning messages; all other output will be suppressed.</p>
-                <li class="git-option"><code>--bare</code></li>
-                <p class="git-command-p">Create a bare repository. If <em>GIT_DIR</em> environment is not set, it is set to the current working directory.</p>
-                <li class="git-option"><code>--template=&lt;template_directory&gt;</code></li>
+                <li class="git-option">--bare</li>
+                <p class="git-command-p">Create a bare repository. If <code>GIT_DIR</code> environment is not set, it is set to the current working directory.</p>
+                <li class="git-option">--template=&lt;template_directory&gt;</li>
                 <p class="git-command-p">Specify the directory from which templates will be used. (See the "TEMPLATE DIRECTORY" section below.)</p>
-                <li class="git-option"><code>--separate-git-dir=&lt;git dir&gt;</git></code></li>
-                <p class="git-command-p">Instead of initializing the repository as a directory to either <em>$GIT_DIR</em> or <em>./.git/</em>, create a text file there containing the path to the actual repository. This file acts as filesystem-agnostic Git symbolic link to the
-                    repository.
+                <li class="git-option">--separate-git-dir=&lt;git dir&gt;</li>
+                <p class="git-command-p">Instead of initializing the repository as a directory to either <code>$GIT_DIR</code> or <code>./.git/</code>, create a text file there containing the path to the actual repository. This file acts as filesystem-agnostic Git symbolic link
+                    to the repository.
                     <br>If this is reinitialization, the repository will be moved to the specified path.</p>
             </ul>
 
@@ -142,11 +142,20 @@
             </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li class="git-option"><code></code>--local</li>
+                <li class="git-option">--local</li>
                 <p class="git-command-p">When the repository to clone from is on a local machine, this flag bypasses the normal "Git aware" transport mechanism and clones the repository by making a copy of HEAD and everything under objects and refs directories. The files under
-                    <em>.git/objects/</em> directory are hardlinked to save space when possible.<br>If the repository is specified as a local path (e.g., <em>/path/to/repo</em>), this is the default, and <em>--local</em> is essentially a no-op. If the
-                    repository is specified as a URL, then this flag is ignored (and we never use the local optimizations). Specifying <em>--no-local</em> will override the default when <em>/path/to/repo</em> is given, using the regular Git transport
-                    instead.</p>
+                    <code>.git/objects/</code> directory are hardlinked to save space when possible.<br>If the repository is specified as a local path (e.g., <code>/path/to/repo</code>), this is the default, and <code>--local</code> is essentially a no-op.
+                    If the repository is specified as a URL, then this flag is ignored (and we never use the local optimizations). Specifying <code>--no-local</code> will override the default when <code>/path/to/repo</code> is given, using the regular
+                    Git transport instead.
+                </p>
+                <li class="git-option">--no-hardlinks</li>
+                <p class="git-command-p">Force the cloning process from a repository on a local filesystem to copy the files under the <code>.git/objects</code> directory instead of using hardlinks. This may be desirable if you are trying to make a back-up of your repository.</p>
+                <li class="git-option">--shared</li>
+                <p class="git-command-p">When the repository to clone is on the local machine, instead of using hard links, automatically setup <code>.git/objects/info/alternates</code>.git/objects/info/alternates to share the objects with the source repository. The resulting
+                    repository starts out without any object of its own.</p>
+                <li class="git-option">--reference[-if-able] &lt;repository&gt;</li>
+                <p class="git-command-p">If the reference repository is on the local machine, automatically setup <code>.git/objects/info/alternates</code> to obtain objects from the reference repository. Using an already existing repository as an alternate will require fewer
+                    objects to be copied from the repository being cloned, reducing network and local storage costs. When using the <code>--reference-if-able</code>, a non existing directory is skipped with a warning instead of aborting the clone.</p>
             </ul>
 
         </section>
