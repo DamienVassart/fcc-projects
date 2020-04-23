@@ -176,6 +176,22 @@
                 <span class="code-indent">[--chmod=(+|-)x] [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]</span>
                 <span class="code-indent">[--] [&lt;pathspec&gt;…​]</span>
             </pre>
+            <h4 class="git-command-section options">Options</h4>
+            <ul>
+                <li class="git-option">&lt;pathspec&gt;…</li>
+                <p class="git-command-p">Files to add content from. Fileglobs (e.g. <code>*.c</code>) can be given to add all matching files. Also a leading directory name (e.g. <code>dir</code> to add <code>dir/file1</code> and <code>dir/file2</code>) can be given to update
+                    the index to match the current state of the directory as a whole (e.g. specifying <code>dir</code> will record not just a file <code>dir/file1</code> modified in the working tree, a file <code>dir/file2</code> added to the working
+                    tree, but also a file <code>dir/file3</code> removed from the working tree). Note that older versions of Git used to ignore removed files; use <code>--no-all</code> option if you want to add modified or new files but ignore removed
+                    ones.
+                </p>
+                <li class="git-option">--dry-run</li>
+                <p class="git-command-p">Don’t actually add the file(s), just show if they exist and/or will be ignored.</p>
+                <li class="git-option">--force</li>
+                <p class="git-command-p">Allow adding otherwise ignored files.</p>
+                <li class="git-option">--interactive</li>
+                <p class="git-command-p">Add modified contents in the working tree interactively to the index. Optional path arguments may be supplied to limit operation to a subset of the working tree. See “Interactive mode” for details.</p>
+
+            </ul>
 
             <h3 class="git-command">status</h3>
             <h3 class="git-command">diff</h3>
