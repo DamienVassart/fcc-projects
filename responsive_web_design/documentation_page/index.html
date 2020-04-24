@@ -190,7 +190,23 @@
                 <p class="git-command-p">Allow adding otherwise ignored files.</p>
                 <li class="git-option">--interactive</li>
                 <p class="git-command-p">Add modified contents in the working tree interactively to the index. Optional path arguments may be supplied to limit operation to a subset of the working tree. See “Interactive mode” for details.</p>
-
+                <li class="git-option">--patch</li>
+                <p class="git-command-p">Interactively choose hunks of patch between the index and the work tree and add them to the index. This gives the user a chance to review the difference before adding modified contents to the index.<br>This effectively runs <code>add --interactive</code>,
+                    but bypasses the initial command menu and directly jumps to the <code>patch</code> subcommand. See “Interactive mode” for details.</p>
+                <li class="git-option">--edit</li>
+                <p class="git-command-p">Open the diff vs. the index in an editor and let the user edit it. After the editor was closed, adjust the hunk headers and apply the patch to the index.<br>The intent of this option is to pick and choose lines of the patch to apply, or
+                    even to modify the contents of lines to be staged. This can be quicker and more flexible than using the interactive hunk selector. However, it is easy to confuse oneself and create a patch that does not apply to the index. See EDITING
+                    PATCHES below.</p>
+                <li class="git-option">--update</li>
+                <p class="git-command-p">Update the index just where it already has an entry matching &lt;pathspec&gt;. This removes as well as modifies index entries to match the working tree, but adds no new files.<br>If no &lt;pathspec&gt; is given when <code>-u</code> option
+                    is used, all tracked files in the entire working tree are updated (old versions of Git used to limit the update to the current directory and its subdirectories).</p>
+                <li class="git-option">--no-ignore-removal</li>
+                <p class="git-command-p">Update the index not only where the working tree has a file matching
+                    <pathspec> but also where the index already has an entry. This adds, modifies, and removes index entries to match the working tree.<br>If no &lt;pathspec&gt; is given when <code>-A</code> option is used, all files in the entire working tree are
+                        updated (old versions of Git used to limit the update to the current directory and its subdirectories).</p>
+                <li class="git-option">--ignore-removal</li>
+                <p class="git-command-p">Update the index by adding new files that are unknown to the index and files modified in the working tree, but ignore files that have been removed from the working tree. This option is a no-op when no &lt;pathspec&gt; is used.<br>This
+                    option is primarily to help users who are used to older versions of Git, whose "git add &lt;pathspec&gt;…​" was a synonym for "git add --no-all &lt;pathspec&gt;…​", i.e. ignored removed files.</p>
             </ul>
 
             <h3 class="git-command">status</h3>
