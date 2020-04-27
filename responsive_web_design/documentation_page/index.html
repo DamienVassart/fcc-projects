@@ -207,6 +207,12 @@
                 <li class="git-option">--ignore-removal</li>
                 <p class="git-command-p">Update the index by adding new files that are unknown to the index and files modified in the working tree, but ignore files that have been removed from the working tree. This option is a no-op when no &lt;pathspec&gt; is used.<br>This
                     option is primarily to help users who are used to older versions of Git, whose "git add &lt;pathspec&gt;…​" was a synonym for "git add --no-all &lt;pathspec&gt;…​", i.e. ignored removed files.</p>
+                <li class="git-option">--ignore-removal</li>
+                <p class="git-command-p">Update the index by adding new files that are unknown to the index and files modified in the working tree, but ignore files that have been removed from the working tree. This option is a no-op when no &lt;pathspec&gt; is used.<br>This
+                    option is primarily to help users who are used to older versions of Git, whose "git add &lt;pathspec&gt;…​" was a synonym for "git add --no-all &lt;;pathspec&gt;…​", i.e. ignored removed files.</p>
+                <li class="git-option">--intent-to-add</li>
+                <p class="git-command-p">Record only the fact that the path will be added later. An entry for the path is placed in the index with no content. This is useful for, among other things, showing the unstaged content of such files with <code>git diff</code> and committing
+                    them with <code>git commit -a</code>.</p>
             </ul>
 
             <h3 class="git-command">status</h3>
