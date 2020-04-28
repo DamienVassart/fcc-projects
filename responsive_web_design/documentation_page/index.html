@@ -213,6 +213,26 @@
                 <li class="git-option">--intent-to-add</li>
                 <p class="git-command-p">Record only the fact that the path will be added later. An entry for the path is placed in the index with no content. This is useful for, among other things, showing the unstaged content of such files with <code>git diff</code> and committing
                     them with <code>git commit -a</code>.</p>
+                <li class="git-option">--refresh</li>
+                <p class=" git-command-p">Don’t add the file(s), but only refresh their stat() information in the index.</p>
+                <li class="git-option">--ignore-errors</li>
+                <p class="git-command-p">If some files could not be added because of errors indexing them, do not abort the operation, but continue adding the others. The command shall still exit with non-zero status. The configuration variable <code>add.ignoreErrors</code> can
+                    be set to true to make this the default behaviour.</p>
+                <li class="git-option">--ignore-missing</li>
+                <p class="git-command-p">This option can only be used together with --dry-run. By using this option the user can check if any of the given files would be ignored, no matter if they are already present in the work tree or not.</p>
+                <li class="git-option">--no-warn-embedded-repo</li>
+                <p class="git-command-p">By default, <code>git add</code> will warn when adding an embedded repository to the index without using <code>git submodule add</code> to create an entry in <code>.gitmodules</code>. This option will suppress the warning (e.g., if you
+                    are manually performing operations on submodules).</p>
+                <li class="git-option">--renormalize</li>
+                <p class="git-command-p">Apply the "clean" process freshly to all tracked files to forcibly add them again to the index. This is useful after changing <code>core.autocrlf</code> configuration or the <code>text</code> attribute in order to correct files added with
+                    wrong CRLF/LF line endings. This option implies <code>-u</code>.</p>
+                <li class="git-option">--chmod=(+|-)x</li>
+                <p class="git-command-p">Override the executable bit of the added files. The executable bit is only changed in the index, the files on disk are left unchanged.</p>
+                <li class=" git-option">--pathspec-from-file=&lt;file&gt;</li>
+                <p class="git-command-p">Pathspec is passed in <code>&lt;file&gt;</code> instead of commandline args. If <code>&lt;file&gt;</code> is exactly - then standard input is used. Pathspec elements are separated by LF or CR/LF. Pathspec elements can be quoted as explained
+                    for the configuration variable <code>core.quotePath</code>.</p>
+                <li class="git-option">--pathspec-file-nul</li>
+                <p class="git-command-p">Only meaningful with <code>--pathspec-from-file</code>. Pathspec elements are separated with NUL character and all other characters are taken literally (including newlines and quotes).</p>
             </ul>
 
             <h3 class="git-command">status</h3>
