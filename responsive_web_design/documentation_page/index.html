@@ -236,6 +236,27 @@
             </ul>
 
             <h3 class="git-command">status</h3>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">Shows the working tree status.</p>
+            <h4 class="git-command-section">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git status</strong> [&lt;options&gt;…​] [--] [&lt;pathspec&gt;…​]
+            </pre>
+            <h4 class="git-command-section">Options</h4>
+            <ul>
+                <li class="git-option">--short</li>
+                <p class="git-command-p">Give the output in the short-format.</p>
+                <li class="git-option">--branch</li>
+                <p class="git-command-p">Show the branch and tracking info even in short-format.</p>
+                <li class="git-option">--show-stash</li>
+                <p class="git-command-p">Show the number of entries currently stashed away.</p>
+                <li class="git-option">--porcelain[=&lt;version&gt;]</li>
+                <p class="git-command-p">Give the output in an easy-to-parse format for scripts. This is similar to the short output, but will remain stable across Git versions and regardless of user configuration. See below for details.<br>The version parameter is used to specify
+                    the format version. This is optional and defaults to the original version v1 format.</p>
+                <li class="git-option">--long</li>
+                <p class="git-command-p">Give the output in the long-format. This is the default.</p>
+            </ul>
+
             <h3 class="git-command">diff</h3>
             <h3 class="git-command">commit</h3>
             <h3 class="git-command">notes</h3>
