@@ -242,7 +242,7 @@
             <pre class="code-sample">
                 <strong>git status</strong> [&lt;options&gt;…​] [--] [&lt;pathspec&gt;…​]
             </pre>
-            <h4 class="git-command-section">Options</h4>
+            <h4 class="git-command-section options">Options</h4>
             <ul>
                 <li class="git-option">--short</li>
                 <p class="git-command-p">Give the output in the short-format.</p>
@@ -255,6 +255,17 @@
                     the format version. This is optional and defaults to the original version v1 format.</p>
                 <li class="git-option">--long</li>
                 <p class="git-command-p">Give the output in the long-format. This is the default.</p>
+                <li class="git-option">--verbose</li>
+                <p class="git-command-p">In addition to the names of files that have been changed, also show the textual changes that are staged to be committed (i.e., like the output of <code>git diff --cached</code>). If <code>-v</code> is specified twice, then also show the
+                    changes in the working tree that have not yet been staged (i.e., like the output of <code>git diff)</code>.</p>
+                <li class="got-option">--no-column</li>
+                <p class="git-command-p">Display untracked files in columns. See configuration variable column.status for option syntax. <code>--column</code> and <code>--no-column</code> without options are equivalent to <strong>always</strong> and <strong>never</strong> respectively.</p>
+                <li class="git-option">--no-ahead-behind</li>
+                <p class="git-command-p">Display or do not display detailed ahead/behind counts for the branch relative to its upstream branch. Defaults to true.</p>
+                <li class="git-option">--no-renames</li>
+                <p class="git-command-p">Turn on/off rename detection regardless of user configuration.</p>
+                <li class="git-option">--find-renames[=&lt;n&gt;]</li>
+                <p class="git-command-p">Turn on rename detection, optionally setting the similarity threshold.</p>
             </ul>
 
             <h3 class="git-command">diff</h3>
