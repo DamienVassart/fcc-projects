@@ -258,7 +258,7 @@
                 <li class="git-option">--verbose</li>
                 <p class="git-command-p">In addition to the names of files that have been changed, also show the textual changes that are staged to be committed (i.e., like the output of <code>git diff --cached</code>). If <code>-v</code> is specified twice, then also show the
                     changes in the working tree that have not yet been staged (i.e., like the output of <code>git diff)</code>.</p>
-                <li class="got-option">--no-column</li>
+                <li class="git-option">--no-column</li>
                 <p class="git-command-p">Display untracked files in columns. See configuration variable column.status for option syntax. <code>--column</code> and <code>--no-column</code> without options are equivalent to <strong>always</strong> and <strong>never</strong> respectively.</p>
                 <li class="git-option">--no-ahead-behind</li>
                 <p class="git-command-p">Display or do not display detailed ahead/behind counts for the branch relative to its upstream branch. Defaults to true.</p>
@@ -283,10 +283,16 @@
                 <span class="code-indent">[-i | -o] [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]</span>
                 <span class="code-indent">[-S[&lt;keyid&gt;]] [--] [&lt;pathspec&gt;…​]</span>
             </pre>
-            <h4 class="git-command-section options"></h4>
+            <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li class="git-option"></li>
-                <p class="git-command-p"></p>
+                <li class="git-option">--all</li>
+                <p class="git-command-p">Tell the command to automatically stage files that have been modified and deleted, but new files you have not told Git about are not affected.</p>
+                <li class="git-option">--patch</li>
+                <p class="git-command-p">Use the interactive patch selection interface to chose which changes to commit.</p>
+                <li class="git-option">--reuse-message=&lt;commit&gt;</li>
+                <p class="git-command-p">Take an existing commit object, and reuse the log message and the authorship information (including the timestamp) when creating the commit.</p>
+                <li class="git-option">--reedit-message=&lt;commit&gt;</li>
+                <p class="git-command-p">Like <strong>-C</strong>, but with <code>-c</code> the editor is invoked, so that the user can further edit the commit message.</p>
             </ul>
 
             <h3 class="git-command">notes</h3>
