@@ -293,6 +293,14 @@
                 <p class="git-command-p">Take an existing commit object, and reuse the log message and the authorship information (including the timestamp) when creating the commit.</p>
                 <li class="git-option">--reedit-message=&lt;commit&gt;</li>
                 <p class="git-command-p">Like <strong>-C</strong>, but with <code>-c</code> the editor is invoked, so that the user can further edit the commit message.</p>
+                <li class="git-option">--fixup=&lt;commit&gt;</li>
+                <p class="git-command-p">Construct a commit message for use with <code>rebase --autosquash</code>. The commit message will be the subject line from the specified commit with a prefix of "fixup! "</p>
+                <li class="git-option">--squash=&lt;commit&gt;</li>
+                <p class="git-command-p">Construct a commit message for use with <code>rebase --autosquash</code>. The commit message subject line is taken from the specified commit with a prefix of "squash! ". Can be used with additional commit message options (<code>-m</code>/<code>-c</code>/<code>-C</code>/<code>-F</code>).</p>
+                <li class="git-option">--reset-author</li>
+                <p class="git-command-p">When used with -C/-c/--amend options, or when committing after a conflicting cherry-pick, declare that the authorship of the resulting commit now belongs to the committer. This also renews the author timestamp.</p>
+                <li class="git-option">--short</li>
+                <p class="git-command-p">When doing a dry-run, give the output in the short-format. Implies <code>--dry-run</code>.</p>
             </ul>
 
             <h3 class="git-command">notes</h3>
