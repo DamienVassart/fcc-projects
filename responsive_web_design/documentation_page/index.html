@@ -374,6 +374,43 @@
             </ul>
 
             <h3 class="git-command">diff</h3>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">Show changes between commits, commit and working tree, etc</p>
+            <h4 class="git-command-serction">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git diff</strong> [&lt;options&gt;] [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+                <strong>git diff</strong> [&lt;options&gt;] --cached [&lt;commit&gt;] [--] [&lt;path&gt;…​]
+                <strong>git diff</strong> [&lt;options&gt;] &lt;commit&gt; &lt;commit&gt; [--] [&lt;path&gt;…​]
+                <strong>git diff</strong> [&lt;options&gt;] &lt;blob&gt; &lt;blob&gt;
+                <strong>git diff</strong> [&lt;options&gt;] --no-index [--] &lt;path&gt; &lt;path&gt;
+            </pre>
+            <h4 class="git-command-section options">Options</h4>
+            <ul>
+                <li class="git-option">--patch</li>
+                <li>
+                    <p class="git-command-p">Generate patch (see section on generating patches). This is the default.</p>
+                </li>
+                <li class="git-option">--no-patch</li>
+                <li>
+                    <p class="git-command-p">Suppress diff output. Useful for commands like <code>git show</code> that show the patch by default, or to cancel the effect of <code>--patch</code>.</p>
+                </li>
+                <li class="git-option">--unified=&lt;n&gt;</li>
+                <li>
+                    <p class="git-command-p">Generate diffs with &lt;n&gt; lines of context instead of the usual three. Implies <code>--patch</code>. Implies <code>-p</code>.</p>
+                </li>
+                <li class="git-option">--output=&lt;file&gt;</li>
+                <li>
+                    <p class="git-command-p">Output to a specific file instead of stdout.</p>
+                </li>
+                <li class="git-option">--raw</li>
+                <li>
+                    <p class="git-command-p">Generate the diff in raw format.</p>
+                </li>
+                <li class="git-option">--patch-with-raw</li>
+                <li>
+                    <p class="git-command-p">Synonym for <code>-p --raw</code>.</p>
+                </li>
+            </ul>
 
             <h3 class="git-command">commit</h3>
             <h4 class="git-command-section">What it does</h4>
