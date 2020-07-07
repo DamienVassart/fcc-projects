@@ -410,6 +410,32 @@
                 <li>
                     <p class="git-command-p">Synonym for <code>-p --raw</code>.</p>
                 </li>
+                <li class="git-option">--indent-heuristic</li>
+                <li>
+                    <p class="git-command-p">Enable the heuristic that shifts diff hunk boundaries to make patches easier to read. This is the default.</p>
+                </li>
+                <li class="git-option">--no-indent-heuristic</li>
+                <li>
+                    <p class="git-command-p">Disable the indent heuristic.</p>
+                </li>
+                <li class="git-option">--minimal</li>
+                <li>
+                    <p class="git-command-p">Spend extra time to make sure the smallest possible diff is produced.</p>
+                </li>
+                <li class="git-option">--patience</li>
+                <li>
+                    <p class="git-command-p">Generate a diff using the "patience diff" algorithm.</p>
+                </li>
+                <li class="git-option">--histogram</li>
+                <li>
+                    <p class="git-command-p">Generate a diff using the "histogram diff" algorithm.</p>
+                </li>
+                <li class="git-option">--anchored=&lt;text&gt;</li>
+                <li>
+                    <p class="git-command-p">Generate a diff using the "anchored diff" algorithm.</p>
+                    <p class="git-command-p">This option may be specified more than once.</p>
+                    <p class="git-command-p">If a line exists in both the source and destination, exists only once, and starts with this text, this algorithm attempts to prevent it from appearing as a deletion or addition in the output. It uses the "patience diff" algorithm internally.</p>
+                </li>
             </ul>
 
             <h3 class="git-command">commit</h3>
