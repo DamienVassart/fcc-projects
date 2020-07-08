@@ -436,6 +436,74 @@
                     <p class="git-command-p">This option may be specified more than once.</p>
                     <p class="git-command-p">If a line exists in both the source and destination, exists only once, and starts with this text, this algorithm attempts to prevent it from appearing as a deletion or addition in the output. It uses the "patience diff" algorithm internally.</p>
                 </li>
+                <li class="git-option">--diff-algorithm={patience|minimal|histogram|myers}</li>
+                <li>
+                    <p class="git-command-p">Choose a diff algorithm. The variants are as follows:</p>
+                </li>
+                <ul class="sub-list">
+                    <li><code>default</code>, <code>myers</code></li>
+                    <li>
+                        <p class="git-command-p">The basic greedy diff algorithm. Currently, this is the default.</p>
+                    </li>
+                    <li><code>minimal</code></li>
+                    <li>
+                        <p class="git-command-p">Spend extra time to make sure the smallest possible diff is produced.</p>
+                    </li>
+                    <li><code>patience</code></li>
+                    <li>
+                        <p class="git-command-p">Use "patience diff" algorithm when generating patches.</p>
+                    </li>
+                    <li><code>histogram</code></li>
+                    <li>
+                        <p class="git-command-p">This algorithm extends the patience algorithm to "support low-occurrence common elements".</p>
+                    </li>
+                </ul>
+
+                <li class="git-option">--compact-summary</li>
+                <li>
+                    <p class="git-command-p">Output a condensed summary of extended header information such as file creations or deletions ("new" or "gone", optionally "+l" if it’s a symlink) and mode changes ("+x" or "-x" for adding or removing executable bit respectively) in
+                        diffstat. The information is put between the filename part and the graph part. Implies <code>--stat</code>.</p>
+                </li>
+                <li class="git-option">--numstat</li>
+                <li>
+                    <p class="git-command-p">Similar to <code>--stat</code>, but shows number of added and deleted lines in decimal notation and pathname without abbreviation, to make it more machine friendly. For binary files, outputs two <code>-</code> instead of saying <code>0 0</code>.</p>
+                </li>
+                <li class="git-option">--shortstat</li>
+                <li>
+                    <p class="git-command-p">Output only the last line of the <code>--stat</code> format containing total number of modified files, as well as number of added and deleted lines.</p>
+                </li>
+                <li class="git-option">--dirstat[=&lt;param1,param2,…​&gt;]</li>
+                <li>
+                    <p class="git-command-p">Output the distribution of relative amount of changes for each sub-directory. The behavior of <code>--dirstat</code> can be customized by passing it a comma separated list of parameters. The defaults are controlled by the <code>diff.dirstat</code>                        configuration variable. The following parameters are available:</p>
+                </li>
+                <ul class="sub-list">
+                    <li><code>changes</code></li>
+                    <li>
+                        <p class="git-command-p">Compute the dirstat numbers by counting the lines that have been removed from the source, or added to the destination. This ignores the amount of pure code movements within a file. In other words, rearranging lines in a file is
+                            not counted as much as other changes. This is the default behavior when no parameter is given.</p>
+                    </li>
+                    <li><code>lines</code></li>
+                    <li>
+                        <p class="git-command-p">Compute the dirstat numbers by doing the regular line-based diff analysis, and summing the removed/added line counts. (For binary files, count 64-byte chunks instead, since binary files have no natural concept of lines). This is
+                            a more expensive <code>--dirstat</code> behavior than the <code>changes</code> behavior, but it does count rearranged lines within a file as much as other changes. The resulting output is consistent with what you get from the
+                            other <code>--*stat</code> options.
+                        </p>
+                    </li>
+                    <li><code>files</code></li>
+                    <li>
+                        <p class="git-command-p">Compute the dirstat numbers by counting the number of files changed. Each changed file counts equally in the dirstat analysis. This is the computationally cheapest <code>--dirstat</code> behavior, since it does not have to look
+                            at the file contents at all.</p>
+                    </li>
+                    <li><code>cumulative</code></li>
+                    <li>
+                        <p class="git-command-p">Count changes in a child directory for the parent directory as well. Note that when using <code>cumulative</code>, the sum of the percentages reported may exceed 100%. The default (non-cumulative) behavior can be specified with
+                            the <code>noncumulative</code> parameter.</p>
+                    </li>
+                    <li><code>&lt;limit&gt;</code></li>
+                    <li>
+                        <p class="git-command-p">An integer parameter specifies a cut-off percent (3% by default). Directories contributing less than this percentage of the changes are not shown in the output.</p>
+                    </li>
+                </ul>
             </ul>
 
             <h3 class="git-command">commit</h3>
