@@ -602,6 +602,27 @@
                 <strong>git notes</strong> prune [-n] [-v]
                 <strong>git notes</strong> get-ref
             </pre>
+            <h4 class="git-command-section options">Subcommands</h4>
+            <ul>
+                <li class="git-option">list</li>
+                <li>
+                    <p class="git-command-p">List the notes object for a given object. If no object is given, show a list of all note objects and the objects they annotate (in the format "&lt;note object&gt; &lt;annotated object&gt;"). This is the default subcommand if no subcommand
+                        is given.</p>
+                </li>
+                <li class="git-option">add</li>
+                <li>
+                    <p class="git-command-p">Add notes for a given object (defaults to HEAD). Abort if the object already has notes (use <code>-f</code> to overwrite existing notes). However, if you’re using <code>add</code> interactively (using an editor to supply the notes
+                        contents), then - instead of aborting - the existing notes will be opened in the editor (like the <code>edit</code> subcommand).</p>
+                </li>
+                <li class="git-option">copy</li>
+                <li>
+                    <p class="git-command-p">Copy the notes for the first object onto the second object (defaults to HEAD). Abort if the second object already has notes, or if the first object has none (use -f to overwrite existing notes to the second object). This subcommand
+                        is equivalent to: <code>git notes add [-f] -C $(git notes list &lt;from-object&gt;) &lt;to-object&gt;</code></p>
+                    <p class="git-command-p">In <code>--stdin</code> mode, take lines in the format</p>
+                    <p class="git-command-p"><code>&lt;from-object&gt; SP &lt;to-object&gt; [ SP &lt;rest&gt; ] LF</code></p>
+                    <p class="git-command-p">on standard input, and copy the notes from each &lt;from-object&gt; to its corresponding &lt;to-object&gt;. (The optional &lt;rest&gt; is ignored so that the command can read the input given to the <code>post-rewrite</code> hook.)</p>
+                </li>
+            </ul>
             <h4 class="git-command-section options">Options</h4>
             <ul></ul>
 
