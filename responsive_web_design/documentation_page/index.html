@@ -504,6 +504,35 @@
                         <p class="git-command-p">An integer parameter specifies a cut-off percent (3% by default). Directories contributing less than this percentage of the changes are not shown in the output.</p>
                     </li>
                 </ul>
+                <li class="git-option">--cumulative</li>
+                <li>
+                    <p class="git-command-p">Synonym for --dirstat=cumulative</p>
+                </li>
+                <li class="git-option">-dirstat-by-file[=&lt;param1,param2&gt;…​]</li>
+                <li>
+                    <p class="git-command-p">Synonym for --dirstat=files,param1,param2…​</p>
+                </li>
+                <li class="git-option">--summary</li>
+                <li>
+                    <p class="git-command-p">Output a condensed summary of extended header information such as creations, renames and mode changes.</p>
+                </li>
+                <li class="git-option">--patch-with-stat</li>
+                <li>
+                    <p class="git-command-p">Synonym for <code>-p --stat</code>.</p>
+                </li>
+                <li class="git-option">-z</li>
+                <li>
+                    <p class="git-command-p">When <code>--raw</code>, <code>--numstat</code>, <code>--name-only</code> or <code>--name-status</code> has been given, do not munge pathnames and use NULs as output field terminators.</p>
+                    <p class="git-command-p">Without this option, pathnames with "unusual" characters are quoted as explained for the configuration variable <code>core.quotePath</code>.</p>
+                </li>
+                <li class="git-option">--name-only</li>
+                <li>
+                    <p class="git-command-p">Show only names of changed files.</p>
+                </li>
+                <li class="git-option">--name-status</li>
+                <li>
+                    <p class="git-command-p">Show only names and status of changed files. See the description of the <code>--diff-filter</code> option on what the status letters mean.</p>
+                </li>
             </ul>
 
             <h3 class="git-command">commit</h3>
@@ -556,6 +585,26 @@
             </ul>
 
             <h3 class="git-command">notes</h3>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">Add or inspect object notes</p>
+            <h4 class="git-command-section">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git notes</strong> [list [&lt;object&gt;]]
+                <strong>git notes</strong> add [-f] [--allow-empty] [-F &lt;file&gt; | -m &lt;msg&gt; | (-c | -C) &lt;object&gt;] [&lt;object&gt;]
+                <strong>git notes</strong> copy [-f] ( --stdin | &lt;from-object&gt; [&lt;to-object&gt;] )
+                <strong>git notes</strong> append [--allow-empty] [-F &lt;file&gt; | -m &lt;msg&gt; | (-c | -C) &lt;object&gt;] [&lt;object&gt;]
+                <strong>git notes</strong> edit [--allow-empty] [&lt;object&gt;]
+                <strong>git notes</strong> show [&lt;object&gt;]
+                <strong>git notes</strong> merge [-v | -q] [-s &lt;strategy&gt; ] &lt;notes-ref&gt;
+                <strong>git notes</strong> merge --commit [-v | -q]
+                <strong>git notes</strong> merge --abort [-v | -q]
+                <strong>git notes</strong> remove [--ignore-missing] [--stdin] [&lt;object&gt;…​]
+                <strong>git notes</strong> prune [-n] [-v]
+                <strong>git notes</strong> get-ref
+            </pre>
+            <h4 class="git-command-section options">Options</h4>
+            <ul></ul>
+
             <h3 class="git-command">restore</h3>
             <h3 class="git-command">reset</h3>
             <h3 class="git-command">rm</h3>
