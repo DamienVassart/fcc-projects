@@ -622,6 +622,38 @@
                     <p class="git-command-p"><code>&lt;from-object&gt; SP &lt;to-object&gt; [ SP &lt;rest&gt; ] LF</code></p>
                     <p class="git-command-p">on standard input, and copy the notes from each &lt;from-object&gt; to its corresponding &lt;to-object&gt;. (The optional &lt;rest&gt; is ignored so that the command can read the input given to the <code>post-rewrite</code> hook.)</p>
                 </li>
+                <li class="git-option">append</li>
+                <li>
+                    <p class="git-command-p">Append to the notes of an existing object (defaults to HEAD). Creates a new notes object if needed.</p>
+                </li>
+                <li class="git-option">edit</li>
+                <li>
+                    <p class="git-command-p">Edit the notes for a given object (defaults to HEAD).</p>
+                </li>
+                <li class="git-option">show</li>
+                <li>
+                    <p class="git-command-p">Show the notes for a given object (defaults to HEAD).</p>
+                </li>
+                <li class="git-option">merge</li>
+                <li>
+                    <p class="git-command-p">Merge the given notes ref into the current notes ref. This will try to merge the changes made by the given notes ref (called "remote") since the merge-base (if any) into the current notes ref (called "local").</p>
+                    <p class="git-command-p">If conflicts arise and a strategy for automatically resolving conflicting notes (see the "NOTES MERGE STRATEGIES" section) is not given, the "manual" resolver is used. This resolver checks out the conflicting notes in a special worktree
+                        (
+                        <code>.git/NOTES_MERGE_WORKTREE</code>), and instructs the user to manually resolve the conflicts there. When done, the user can either finalize the merge with <strong>git notes merge --commit</strong>, or abort the merge with
+                        <strong>git notes merge --abort</strong>.</p>
+                </li>
+                <li class="git-option">remove</li>
+                <li>
+                    <p class="git-command-p">Remove the notes for given objects (defaults to HEAD). When giving zero or one object from the command line, this is equivalent to specifying an empty note message to the <code>edit</code> subcommand.</p>
+                </li>
+                <li class="git-option">prune</li>
+                <li>
+                    <p class="git-command-p">Remove all notes for non-existing/unreachable objects.</p>
+                </li>
+                <li class="git-option">get-ref</li>
+                <li>
+                    <p class="git-command-p">Print the current notes ref. This provides an easy way to retrieve the current notes ref (e.g. from scripts).</p>
+                </li>
             </ul>
             <h4 class="git-command-section options">Options</h4>
             <ul></ul>
