@@ -661,15 +661,25 @@
                 <li>
                     <p class="git-command-p">When adding notes to an object that already has notes, overwrite the existing notes (instead of aborting).</p>
                 </li>
+                <li class="git-option">--message=&lt;msg&gt;</li>
+                <li>
+                    <p class="git-command-p">Use the given note message (instead of prompting). If multiple <code>-m</code> options are given, their values are concatenated as separate paragraphs. Lines starting with <code>#</code> and empty lines other than a single line between
+                        paragraphs will be stripped out.</p>
+                </li>
+                <li class="git-option">--file=&lt;file&gt;</li>
+                <li>
+                    <p class="git-command-p">Take the note message from the given file. Use <strong>-</strong> to read the note message from the standard input. Lines starting with <code>#</code> and empty lines other than a single line between paragraphs will be stripped out.</p>
+                </li>
+                <li class="git-option">-reuse-message=&lt;object&gt;</li>
+                <li>
+                    <p class="git-command-p">Take the given blob object (for example, another note) as the note message. (Use <code>git notes copy &lt;object&gt;</code> instead to copy notes between objects.)</p>
+                </li>
             </ul>
 
             <h3 class="git-command">restore</h3>
             <h3 class="git-command">reset</h3>
             <h3 class="git-command">rm</h3>
             <h3 class="git-command">mv</h3>
-            <p></p>
-            <p></p>
-            <code></code>
             <ul>
                 <li></li>
             </ul>
