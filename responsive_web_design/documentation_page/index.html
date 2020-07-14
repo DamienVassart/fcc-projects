@@ -687,7 +687,20 @@
             </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-
+                <li class="git-option">--source=&lt;tree&gt;</li>
+                <li>
+                    <p class="git-command-p">Restore the working tree files with the content from the given tree. It is common to specify the source tree by naming a commit, branch or tag associated with it.</p>
+                    <p class="git-command-p">If not specified, the contents are restored from <code>HEAD</code> if <code>--staged</code> is given, otherwise from the index.</p>
+                </li>
+                <li class="git-option">--patch</li>
+                <li>
+                    <p class="git-command-p">Interactively select hunks in the difference between the restore source and the restore location.</p>
+                    <p class="git-command-p">Note that <code>--patch</code> can accept no pathspec and will prompt to restore all modified paths.</p>
+                </li>
+                <li class="git-option">--staged</li>
+                <li>
+                    <p class="git-command-p">Specify the restore location. If neither option is specified, by default the working tree is restored. Specifying <code>--staged</code> will only restore the index. Specifying both restores both.</p>
+                </li>
             </ul>
 
             <h3 class="git-command">reset</h3>
