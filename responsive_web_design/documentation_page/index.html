@@ -704,6 +704,42 @@
             </ul>
 
             <h3 class="git-command">reset</h3>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">Reset current HEAD to the specified state</p>
+            <h4 class="git-command-section">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git reset</strong> [-q] [&lt;tree-ish&gt;] [--] &lt;pathspec&gt;…​
+                <strong>git reset</strong> [-q] [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]] [&lt;tree-ish&gt;]
+                <strong>git reset</strong> (--patch | -p) [&lt;tree-ish&gt;] [--] [&lt;pathspec&gt;…​]
+                <strong>git reset</strong> [--soft | --mixed [-N] | --hard | --merge | --keep] [-q] [&lt;commit&gt;]
+            </pre>
+            <h4 class="git-command-section options">Options</h4>
+            <ul>
+                <li class="git-option">--quiet</li> ,
+
+                <li class="git-option">--no-quiet</li>
+                <li>
+                    <p class="git-command-p">Be quiet, only report errors. The default behavior is set by the <code>reset.quiet</code> config option. <code>--quiet</code> and <code>--no-quiet</code> will override the default behavior.</p>
+                </li>
+                <li class="git-option">--pathspec-from-file=&lt;file&gt;</li>
+                <li>
+                    <p class="git-command-p">Pathspec is passed in <code>&lt;file&gt;</code> instead of commandline args. If <code>&lt;file&gt;</code> is exactly <code>-</code> then standard input is used. Pathspec elements are separated by LF or CR/LF. Pathspec elements can
+                        be quoted as explained for the configuration variable <code>core.quotePath</code>. </p>
+                </li>
+                <li class="git-option">--pathspec-file-nul</li>
+                <li>
+                    <p class="git-command-p">Only meaningful with <code>--pathspec-from-file</code>. Pathspec elements are separated with NUL character and all other characters are taken literally (including newlines and quotes).</p>
+                </li>
+                <li class="git-option">--</li>
+                <li>
+                    <p class="git-command-p">Do not interpret any more arguments as options.</p>
+                </li>
+                <li class="git-option">&lt;pathspec&gt;…​ </li>
+                <li>
+                    <p class="git-command-p">Limits the paths affected by the operation.</p>
+                </li>
+            </ul>
+
             <h3 class="git-command">rm</h3>
             <h3 class="git-command">mv</h3>
             <ul>
