@@ -741,6 +741,37 @@
             </ul>
 
             <h3 class="git-command">rm</h3>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">Remove files from the working tree and from the index</p>
+            <h4 class="git-command-section">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git rm</strong> [-f | --force] [-n] [-r] [--cached] [--ignore-unmatch]
+                <span class="code-indent">[--quiet] [--pathspec-from-file=&lt;file&gt; [--pathspec-file-nul]]</span>
+                <span class="code-indent">[--] [&lt;pathspec&gt;…​]</span>
+            </pre>
+            <h4 class="git-command-section options">Options</h4>
+            <ul>
+                <li class="git-option">&lt;pathspec&gt;…</li>
+                <li>
+                    <p class="git-command-p">Files to remove. A leading directory name (e.g. <code>dir</code> to remove <code>dir/file1</code> and <code>dir/file2</code>) can be given to remove all files in the directory, and recursively all sub-directories, but this requires
+                        the -r option to be explicitly given.</p>
+                    <p class="git-command-p">The command removes only the paths that are known to Git.</p>
+                    <p class="git-command-p">File globbing matches across directory boundaries. Thus, given two directories d and d2, there is a difference between using <code>git rm 'd*'</code> and <code>git rm 'd/*'</code>, as the former will also remove all of directory <code>d2</code>.</p>
+                </li>
+                <li class="git-option">--force</li>
+                <li>
+                    <p class="git-command-p">Override the up-to-date check.</p>
+                </li>
+                <li class="git-option">--dry-run</li>
+                <li>
+                    <p class="git-command-p">Don’t actually remove any file(s). Instead, just show if they exist in the index and would otherwise be removed by the command.</p>
+                </li>
+                <li class="git-option">-r</li>
+                <li>
+                    <p class="git-command-p">Allow recursive removal when a leading directory name is given.</p>
+                </li>
+            </ul>
+
             <h3 class="git-command">mv</h3>
             <ul>
                 <li></li>
