@@ -773,9 +773,32 @@
             </ul>
 
             <h3 class="git-command">mv</h3>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">Move or rename a file, a directory, or a symlink</p>
+            <h4 class="git-command-section">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git mv</strong> &lt;options&gt;…​ &lt;args&gt;…​
+            </pre>
+            <h4 class="git-command-section options">Options</h4>
             <ul>
-                <li></li>
+                <li class="git-option">--force</li>
+                <li>
+                    <p class="git-command-p">Force renaming or moving of a file even if the target exists</p>
+                </li>
+                <li class="git-option">-k</li>
+                <li>
+                    <p class="git-command-p">Skip move or rename actions which would lead to an error condition. An error happens when a source is neither existing nor controlled by Git, or when it would overwrite an existing file unless <code>-f</code> is given.</p>
+                </li>
+                <li class="git-option">--dry-run</li>
+                <li>
+                    <p class="git-command-p">Do nothing; only show what would happen</p>
+                </li>
+                <li class="git-option">--verbose</li>
+                <li>
+                    <p class="git-command-p">Report the names of files as they are moved.</p>
+                </li>
             </ul>
+
         </section>
         <section class="main-section" id="branching_merging">
             <header>
