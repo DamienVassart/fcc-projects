@@ -806,6 +806,29 @@
                 <!-- Text description of the section-->
             </header>
             <h3 class="git-command">branch</h3>
+            <h4 class="git-command-section">What it does</h4>
+            <p class="git-command-p">List, create, or delete branches</p>
+            <h4 class="git-command-section">Synopsis</h4>
+            <pre class="code-sample">
+                <strong>git branch</strong> [--color[=&lt;when&gt;] | --no-color] [--show-current]
+                <span class="code-indent">[-v [--abbrev=&lt;length&gt; | --no-abbrev]]</span>
+                <span class="code-indent">[--column[=&lt;options&gt;] | --no-column] [--sort=&lt;key&gt;]</span>
+                <span class="code-indent">[(--merged | --no-merged) [&lt;commit&gt;]]</span>
+                <span class="code-indent">[--contains [&lt;commit]] [--no-contains [&lt;commit&gt;]]</span>
+                <span class="code-indent">[--points-at &lt;object&gt;] [--format=&lt;format&gt;]</span>
+                <span class="code-indent">[(-r | --remotes) | (-a | --all)]</span>
+                <span class="code-indent">[--list] [&lt;pattern&gt;…​]</span>
+                <strong>git branch</strong> [--track | --no-track] [-f] &lt;branchname&gt; [&lt;start-point&gt;]
+                <strong>git branch</strong> (--set-upstream-to=&lt;upstream&gt; | -u &lt;upstream&gt;) [&lt;branchname&gt;]
+                <strong>git branch</strong> --unset-upstream [&lt;branchname&gt;]
+                <strong>git branch</strong> (-m | -M) [&lt;oldbranch&gt;] &lt;newbranch&gt;
+                <strong>git branch</strong> (-c | -C) [&lt;oldbranch&gt;] &lt;newbranch&gt;
+                <strong>git branch</strong> (-d | -D) [-r] &lt;branchname&gt;…​
+                <strong>git branch</strong> --edit-description [&lt;branchname&gt;]
+            </pre>
+            <h4 class="git-command-section options">Options</h4>
+            <ul></ul>
+
             <h3 class="git-command">checkout</h3>
             <h3 class="git-command">switch</h3>
             <h3 class="git-command">merge</h3>
