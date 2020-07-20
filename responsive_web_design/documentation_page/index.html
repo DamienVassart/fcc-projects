@@ -827,7 +827,22 @@
                 <strong>git branch</strong> --edit-description [&lt;branchname&gt;]
             </pre>
             <h4 class="git-command-section options">Options</h4>
-            <ul></ul>
+            <ul>
+                <li class="git-option">--delete</li>
+                <li>
+                    <p class="git-command-p">Delete a branch. The branch must be fully merged in its upstream branch, or in <code>HEAD</code> if no upstream was set with <code>--track</code> or <code>--set-upstream-to</code>.</p>
+                </li>
+                <li class="git-option">-D</li>
+                <li>
+                    <p class="git-command-p">Shortcut for <code>--delete --force</code>.</p>
+                </li>
+                <li class="git-option">--force</li>
+                <li>
+                    <p class="git-command-p">Reset &lt;branchname&gt; to &lt;startpoint&gt;, even if &lt;branchname&gt; exists already. Without <code>-f</code>, git branch refuses to change an existing branch. In combination with <code>-d</code> (or <code>--delete</code>), allow
+                        deleting the branch irrespective of its merged status. In combination with <code>-m</code> (or <code>--move</code>), allow renaming the branch even if the new branch name already exists, the same applies for <code>-c</code> (or
+                        <code>--copy</code>).</p>
+                </li>
+            </ul>
 
             <h3 class="git-command">checkout</h3>
             <h3 class="git-command">switch</h3>
