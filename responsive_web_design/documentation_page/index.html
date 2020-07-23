@@ -878,14 +878,33 @@
 
             <h3 class="git-command">switch</h3>
             <h4 class="git-command-section">What it does</h4>
-            <p class="git-command-p"></p>
+            <p class="git-command-p">Switch branches</p>
             <h4 class="git-command-section">Synopsis</h4>
             <pre class="code-sample">
-                
+                <strong>git switch</strong> [&lt;options&gt;] [--no-guess] &lt;branch&gt;
+                <strong>git switch</strong> [&lt;options&gt;] --detach [&lt;start-point&gt;]
+                <strong>git switch</strong> [&lt;options&gt;] (-c|-C) &lt;new-branch&gt; [&lt;start-point&gt;]
+                <strong>git switch</strong> [&lt;options&gt;] --orphan &lt;new-branch&gt;
             </pre>
             <h4 class="git-command-section options">Options</h4>
             <ul>
-
+                <li class="git-option">&lt;branch&gt;</li>
+                <li>
+                    <p class="git-command-p">Branch to switch to.</p>
+                </li>
+                <li class="git-option">&lt;new-branch&gt;</li>
+                <li>
+                    <p class="git-command-p">Name for the new branch.</p>
+                </li>
+                <li class="git-option">&lt;start-point&gt;</li>
+                <li>
+                    <p class="git-command-p">The starting point for the new branch. Specifying a <code>&lt;start-point&gt;</code> allows you to create a branch based on some other point in history than where HEAD currently points. (Or, in the case of <code>--detach</code>, allows
+                        you to inspect and detach from some other point.)</p>
+                    <p class="git-command-p">You can use the <code>@{-N}</code> syntax to refer to the N-th last branch/commit switched to using "git switch" or "git checkout" operation. You may also specify <code>-</code> which is synonymous to <code>@{-1}</code>. This is often
+                        used to switch quickly between two branches, or to undo a branch switch by mistake.</p>
+                    <p class="git-command-p">As a special case, you may use <code>A...B</code> as a shortcut for the merge base of <code>A</code> and <code>B</code> if there is exactly one merge base. You can leave out at most one of <code>A</code> and <code>B</code>, in which
+                        case it defaults to <code>HEAD</code>.</p>
+                </li>
             </ul>
 
             <h3 class="git-command">merge</h3>
