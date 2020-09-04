@@ -13,5 +13,3 @@ function fearNotLetter(str) {
   
   return diff.length == 0 ? undefined : diff.map(l => String.fromCharCode(l)).join('');
 }
-
-console.log(fearNotLetter('abcde'));
