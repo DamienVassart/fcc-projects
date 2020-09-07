@@ -16,5 +16,3 @@ function addTogether() {
   var args = [...arguments];
   return args.some(arg => typeof arg !== 'number') ? undefined : args.length > 1 ? args[0] + args[1] : arg => (typeof arg === 'number' ? arg + args[0] : undefined);
 }
-
-addTogether(2,3);
