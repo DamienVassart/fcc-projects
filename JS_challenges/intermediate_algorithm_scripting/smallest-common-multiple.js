@@ -14,5 +14,5 @@ function smallestCommons(arr) {
 		return b === 0 ? a : gcd(b, a % b);
 	}
 
-  return fullRange.reduce((acc, curr, i, fullRange) => (acc * fullRange[i]) / gcd(acc, fullRange[i]) , fullRange[0]);
+  	return fullRange.reduce((acc, curr, i, fullRange) => (acc * fullRange[i]) / gcd(acc, fullRange[i]) , fullRange[0]);
 }
