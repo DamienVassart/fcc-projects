@@ -1,5 +1,5 @@
 function palindrome(str) {
-  return str.replace(/\W|\s|\d|_/g, '').toLowerCase() === str.replace(/\W|\s|\d|_/g, '').toLowerCase().split('').reverse().join('');
+  return str.replace(/\W|\s|_/g, '').toLowerCase() === str.replace(/\W|\s|_/g, '').toLowerCase().split('').reverse().join('');
 }
 
 console.log(palindrome("eye")); // true
