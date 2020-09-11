@@ -27,18 +27,14 @@ function convertToRoman(num) {
 
 	var divisors = [1000, 500, 100, 50, 10, 5, 1];
 
-	var split = (num + '').padStart(4, '0').split('').reverse().map((e, i) => +e * 10**i).reverse();
+	var [thousands, hundreds, tens, units] = (num + '').padStart(4, '0').split('').reverse().map((e, i) => +e * 10**i).reverse();
 
-	var breakDown = [(num - num % 1000) / 1000];
+	var breakDown = divisors.reduce((res, val, i, arr) => res.concat((num % arr[i-1] - num % arr[i]) / arr[i]), [(num - num % 1000) / 1000]).filter(e => !isNaN(e));
 
-	for (let i = 1; i < divisors.length; i++) {
-		breakDown.push((num % divisors[i - 1] - num % divisors[i]) / divisors[i]);
-	}
-
-	var thousands = romanMap[1000].repeat(split[0] / 1000);
-	var hundreds = romanMap.hasOwnProperty(split[1]) ? romanMap[split[1]] : [romanMap[500].repeat(breakDown[1]), romanMap[100].repeat(breakDown[2])].join('');
-	var tens = romanMap.hasOwnProperty(split[2]) ? romanMap[split[2]] : [romanMap[50].repeat(breakDown[3]), romanMap[10].repeat(breakDown[4])].join('');
-	var units = romanMap.hasOwnProperty(split[3]) ? romanMap[split[3]] : [romanMap[5].repeat(breakDown[5]), romanMap[1].repeat(breakDown[6])].join('');
+	thousands = romanMap[1000].repeat(thousands / 1000);
+	hundreds = romanMap.hasOwnProperty(hundreds) ? romanMap[hundreds] : [romanMap[500].repeat(breakDown[1]), romanMap[100].repeat(breakDown[2])].join('');
+	tens = romanMap.hasOwnProperty(tens) ? romanMap[tens] : [romanMap[50].repeat(breakDown[3]), romanMap[10].repeat(breakDown[4])].join('');
+	units = romanMap.hasOwnProperty(units) ? romanMap[units] : [romanMap[5].repeat(breakDown[5]), romanMap[1].repeat(breakDown[6])].join('');
 
 	return thousands + hundreds + tens + units;
 	
