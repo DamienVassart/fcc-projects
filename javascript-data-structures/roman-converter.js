@@ -27,15 +27,11 @@ function convertToRoman(num) {
 
 	var divisors = [1000, 500, 100, 50, 10, 5, 1];
 
-	var [units, tens, hundreds, thousands] = (num + '').padStart(4, '0').split('').reverse().map((e, i) => +e * 10**i);
+	var [thousands, fiveHundreds, hundreds, fifties, tens, fives, ones] = divisors.reduce((res, val, i, arr) => res.concat((num % arr[i-1] - num % arr[i])), [num - num % 1000]).filter(e => !isNaN(e));
 
-	var breakDown = divisors.reduce((res, val, i, arr) => res.concat((num % arr[i-1] - num % arr[i]) / arr[i]), [(num - num % 1000) / 1000]).filter(e => !isNaN(e));
-
-	thousands = romanMap[1000].repeat(thousands / 1000);
-	hundreds = romanMap.hasOwnProperty(hundreds) ? romanMap[hundreds] : romanMap[500].repeat(breakDown[1]) + romanMap[100].repeat(breakDown[2]);
-	tens = romanMap.hasOwnProperty(tens) ? romanMap[tens] : romanMap[50].repeat(breakDown[3]) + romanMap[10].repeat(breakDown[4]);
-	units = romanMap.hasOwnProperty(units) ? romanMap[units] : romanMap[5].repeat(breakDown[5]) + romanMap[1].repeat(breakDown[6]);
-
-	return thousands + hundreds + tens + units;
+	return 'M'.repeat(thousands / 1000)
+	 + (romanMap.hasOwnProperty(fiveHundreds + hundreds) ? romanMap[fiveHundreds + hundreds] : 'D' + 'C'.repeat(hundreds / 100))
+	 + (romanMap.hasOwnProperty(fifties + tens) ? romanMap[fifties + tens] : 'L' + 'X'.repeat(tens / 10)) 
+	 + (romanMap.hasOwnProperty(fives + ones) ? romanMap[fives + ones] : 'V' + 'I'.repeat(ones)); 
 	
 }
