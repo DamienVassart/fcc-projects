@@ -30,8 +30,7 @@ function convertToRoman(num) {
 	var [thousands, fiveHundreds, hundreds, fifties, tens, fives, ones] = divisors.reduce((res, val, i, arr) => res.concat((num % arr[i-1] - num % arr[i])), [num - num % 1000]).filter(e => !isNaN(e));
 
 	return 'M'.repeat(thousands / 1000)
-	 + (romanMap.hasOwnProperty(fiveHundreds + hundreds) ? romanMap[fiveHundreds + hundreds] : 'D' + 'C'.repeat(hundreds / 100))
-	 + (romanMap.hasOwnProperty(fifties + tens) ? romanMap[fifties + tens] : 'L' + 'X'.repeat(tens / 10)) 
-	 + (romanMap.hasOwnProperty(fives + ones) ? romanMap[fives + ones] : 'V' + 'I'.repeat(ones)); 
-	
+	 + (romanMap.hasOwnProperty(fiveHundreds + hundreds) ? romanMap[fiveHundreds + hundreds] : 'D'.repeat(fiveHundreds / 500) + 'C'.repeat(hundreds / 100))
+	 + (romanMap.hasOwnProperty(fifties + tens) ? romanMap[fifties + tens] : 'L'.repeat(fifties / 50) + 'X'.repeat(tens / 10)) 
+	 + (romanMap.hasOwnProperty(fives + ones) ? romanMap[fives + ones] : 'V'.repeat(fives / 5) + 'I'.repeat(ones)); 
 }
