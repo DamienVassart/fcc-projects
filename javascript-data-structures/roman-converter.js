@@ -9,6 +9,8 @@ https://www.mathsisfun.com/roman-numerals.html
 
 function convertToRoman(num) {
 	
+	if (![...Array(4999).keys()].map(e => e+1).includes(num) || typeof num !=='number') return 'Please enter a number between 1 and 4999';
+
 	var romanMap = {
 		1000 : 'M', 
 		900 : 'CM', 
@@ -32,5 +34,5 @@ function convertToRoman(num) {
 	return 'M'.repeat(thousands / 1000)
 	 + (romanMap.hasOwnProperty(fiveHundreds + hundreds) ? romanMap[fiveHundreds + hundreds] : 'D'.repeat(fiveHundreds / 500) + 'C'.repeat(hundreds / 100))
 	 + (romanMap.hasOwnProperty(fifties + tens) ? romanMap[fifties + tens] : 'L'.repeat(fifties / 50) + 'X'.repeat(tens / 10)) 
-	 + (romanMap.hasOwnProperty(fives + ones) ? romanMap[fives + ones] : 'V'.repeat(fives / 5) + 'I'.repeat(ones)); 
+	 + (romanMap.hasOwnProperty(fives + ones) ? romanMap[fives + ones] : 'V'.repeat(fives / 5) + 'I'.repeat(ones));
 }
