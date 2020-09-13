@@ -9,7 +9,7 @@ https://www.mathsisfun.com/roman-numerals.html
 
 function convertToRoman(num) {
 	
-	if (![...Array(4999).keys()].map(e => e+1).includes(num) || typeof num !=='number') return 'Please enter a number between 1 and 4999';
+	if (![...Array(4999).keys()].map(e => e+1).includes(num)) return 'Please enter a number between 1 and 4999';
 
 	var romanMap = {
 		1000 : 'M', 
