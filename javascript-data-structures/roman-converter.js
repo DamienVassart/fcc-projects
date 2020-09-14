@@ -29,7 +29,7 @@ function convertToRoman(num) {
 
 	var divisors = [1000, 500, 100, 50, 10, 5, 1];
 
-	var [thousands, fiveHundreds, hundreds, fifties, tens, fives, ones] = divisors.reduce((res, val, i, arr) => res.concat((num % arr[i] - num % arr[i+1]), [num - num % 1000]);
+	var [thousands, fiveHundreds, hundreds, fifties, tens, fives, ones] = divisors.reduce((res, val, i, arr) => res.concat(i >= 0 ? (num % arr[i] - num % arr[i+1]) : 0), [num - num % 1000]);
 
 	return 'M'.repeat(thousands / 1000)
 	 + (romanMap.hasOwnProperty(fiveHundreds + hundreds) ? romanMap[fiveHundreds + hundreds] : 'D'.repeat(fiveHundreds / 500) + 'C'.repeat(hundreds / 100))
