@@ -20,5 +20,3 @@ function rot13(str) {
 
 	return str.split('').map(e => String.fromCharCode(shift(e.charCodeAt(0)))).join('');
 }
-
-console.log(rot13("SERR PBQR PNZC"));
