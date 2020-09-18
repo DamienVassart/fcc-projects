@@ -18,5 +18,5 @@ If the country code is provided, you must confirm that the country code is 1. Re
 */
 
 function telephoneCheck(str) {
-  return (/(\d{3})(-|\ )?(\d{3})(-| )?(\d{4})/g).test(str);
+  return (/^([1] ?)?(\d{3}|\(\d{3}\))(-| )?(\d{3})(-| )?(\d{4})$/gy).test(str);
 }
