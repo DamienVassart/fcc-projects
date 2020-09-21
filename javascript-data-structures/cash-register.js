@@ -31,11 +31,11 @@ function checkCashRegister(price, cash, cid) {
 
   if (available < due || !unitsValues.some((e, i) => e <= due && unitsAmounts[i] >= due)) status = "INSUFFICIENT_FUNDS";
   else if (available === due) {
-  	status = 'CLOSED';
+  	status = "CLOSED";
   	change = cid;
   }
   else {
-  	status = 'OPEN';
+  	status = "OPEN";
   	//TODO: complete this code block
   }
   
