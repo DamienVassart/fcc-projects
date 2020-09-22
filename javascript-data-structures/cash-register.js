@@ -35,16 +35,18 @@ function checkCashRegister(price, cash, cid) {
   	change = cid;
   }
   else {
+    var res = [];
   	status = "OPEN";
   	for (let i = 8; i >= 0; i--) {
       if (units[i] <= due) {
         while (amounts[i] > 0 && due > 0) {
           amounts[i] -= units[i];
           due -= units[i];
-          change.push([cid[i][0], units[i]]);
+          !res.includes(cid[i][0]) ? res.push(cid[i][0], units[i]) : res[res.indexOf(cid[i][0]) + 1] += units[i];
         } // end while
       } // end if
     } // end for
+    change = res;
   } // end else
   
   return {status,change};
