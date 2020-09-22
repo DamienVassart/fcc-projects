@@ -24,19 +24,19 @@ One-hundred Dollars	$100 (ONE HUNDRED)
 
 function checkCashRegister(price, cash, cid) {
   var status, change = [], due = cash - price;
-  var unitsValues = [0.01, 0.05, 0.1, 0.25, 1, 5, 10, 20, 100]; 
+  var units = [0.01, 0.05, 0.1, 0.25, 1, 5, 10, 20, 100]; 
 
-  var unitsAmounts = cid.reduce((res, val, i, arr) => res.concat(arr[i][1]), []);
-  var available = +unitsAmounts.reduce((a, b) => a + b, 0).toFixed(2);
+  var amounts = cid.reduce((res, val, i, arr) => res.concat(arr[i][1]), []);
+  var available = +amounts.reduce((a, b) => a + b, 0).toFixed(2);
 
-  if (available < due || !unitsValues.some((e, i) => e <= due && unitsAmounts[i] >= due)) status = "INSUFFICIENT_FUNDS";
+  if (available < due || !units.some((e, i) => e <= due && amounts[i] >= due)) status = "INSUFFICIENT_FUNDS";
   else if (available === due) {
   	status = "CLOSED";
   	change = cid;
   }
   else {
   	status = "OPEN";
-  	//TODO: complete this code block
+  	
   }
   
   return {status,change};
