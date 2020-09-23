@@ -39,7 +39,7 @@ function checkCashRegister(price, cash, cid) {
   	status = "OPEN";
   	for (let i = 8; i >= 0; i--) {
       if (units[i] <= due) {
-        while (amounts[i] > 0 && due > 0) {
+        while (amounts[i] > 0 && due >= 0 && (due - units[i]) >= 0) {
           amounts[i] -= units[i];
           due -= units[i];
           !res.includes(cid[i][0]) ? res.push(cid[i][0], units[i]) : res[res.indexOf(cid[i][0]) + 1] += units[i];
