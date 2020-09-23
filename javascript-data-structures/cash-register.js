@@ -31,15 +31,16 @@ function checkCashRegister(price, cash, cid) {
 
   if (available < due || amounts.filter((e, i) => units[i] <= due).reduce((a, b) => a + b) < due) status = "INSUFFICIENT_FUNDS";
   else if (available === due) {
-  	status = "CLOSED";
-  	change = cid;
+    due -= available;
+    status = "CLOSED";
+    change = cid;
   }
   else {
     var res = [];
-  	status = "OPEN";
-  	for (let i = 8; i >= 0; i--) {
+    status = "OPEN";
+    for (let i = 8; i >= 0; i--) {
       if (units[i] <= due) {
-        while (amounts[i] > 0 && due >= 0 && (due - units[i]) >= 0) {
+        while (amounts[i] > 0 && due >= 0 && +due.toFixed(2) - units[i] >= 0) {
           amounts[i] -= units[i];
           due -= units[i];
           !res.includes(cid[i][0]) ? res.push(cid[i][0], units[i]) : res[res.indexOf(cid[i][0]) + 1] += units[i];
