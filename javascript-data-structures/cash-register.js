@@ -29,7 +29,7 @@ function checkCashRegister(price, cash, cid) {
   var amounts = cid.reduce((res, val, i, arr) => res.concat(arr[i][1]), []);
   var available = +amounts.reduce((a, b) => a + b, 0).toFixed(2);
 
-  if (available < due || !units.some((e, i) => e <= due && amounts[i] >= due)) status = "INSUFFICIENT_FUNDS";
+  if (available < due || amounts.filter((e, i) => units[i] <= due).reduce((a, b) => a + b) < due) status = "INSUFFICIENT_FUNDS";
   else if (available === due) {
   	status = "CLOSED";
   	change = cid;
