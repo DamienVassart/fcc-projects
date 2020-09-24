@@ -37,16 +37,20 @@ function checkCashRegister(price, cash, cid) {
   }
   else {
     status = "OPEN";
-    for (let i = 8; i >= 0; i--) {
+    change = cid.reduceRight((res, val, i, arr) => {
       if (units[i] <= due) {
+        val[1] = 0;
         while (amounts[i] > 0 && due >= 0 && +due.toFixed(2) - units[i] >= 0) {
+          val[1] += units[i];
           amounts[i] -= units[i];
           due -= units[i];
-          !change.includes(cid[i][0]) ? change.push(cid[i][0], units[i]) : change[change.indexOf(cid[i][0]) + 1] += units[i];
-        } // end while
-      } // end if
-    } // end for
-  } // end else
+        }
+      } else {
+        val[1] = 0;
+      }
+      return res.filter(e => e[1] !== 0).reverse();
+    }, cid);
+  }
   
   return {status, change};
 }
