@@ -3,10 +3,32 @@ import React from "react"
 class QuoteBox extends React.Component {
     constructor(props) {
         super(props);
+        this.tweetQuote = this.tweetQuote.bind(this);
+    }
+
+    tweetQuote(str1, str2) {
+        return `https://twitter.com/intent/tweet?text="${str1}" (${str2})`;
     }
 
     render() {
-        return <div></div>
+        return (
+            <div id="quote-box">
+                <div id="text">
+                    {this.props.quote.text}
+                </div>
+                <div id="author">
+                    {this.props.quote.author}
+                </div>
+                <button id="new-quote" onClick={this.props.newQuote}>
+                    New Quote
+                </button>
+                <a href={this.tweetQuote(this.props.quote.text, this.props.quote.author)} id="tweet-quote" target="_blank" rel="noreferrer">
+                    <button>
+                        Tweet Quote
+                    </button>
+                </a>
+            </div>
+        )
     }
 }
 
