@@ -14,15 +14,15 @@ class QuoteBox extends React.Component {
         return (
             <div id="quote-box">
                 <div id="text">
-                    {this.props.quote.text}
+                    {this.props.text}
                 </div>
                 <div id="author">
-                    {this.props.quote.author}
+                    {this.props.author}
                 </div>
                 <button id="new-quote" onClick={this.props.newQuote}>
                     New Quote
                 </button>
-                <a href={this.tweetQuote(this.props.quote.text, this.props.quote.author)} id="tweet-quote" target="_blank" rel="noreferrer">
+                <a href={this.tweetQuote(this.props.text, this.props.author)} id="tweet-quote" target="_blank" rel="noreferrer">
                     <button>
                         Tweet Quote
                     </button>

@@ -16,7 +16,7 @@ class App extends React.Component {
   randomQuote(n) {
     return (
       <QuoteBox
-        text={quotesArr[n].text}
+        text={quotesArr[n].quote}
         author={quotesArr[n].author}
         newQuote={this.newQuote}
       />
