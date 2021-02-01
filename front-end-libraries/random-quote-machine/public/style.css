@@ -22,18 +22,39 @@ body {
 3 - Element-Specific Properties
 ================================================= */
 
-#quote-box {
+.quote-box {
+    background-color: white;
     position: relative;
     top: 120px;
     margin: auto;
-    width: 640px;
-    height: 320px;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: 0 30px 50px rgba(0, 0, 0, .2);
+
+    display: grid;
+    grid-template-columns: 170px 200px 170px;
+    grid-template-rows: 160px 60px 100px;
+    gap: 0px 0px;
+    grid-template-areas:
+    "quote quote quote"
+    "author author author"
+    "new-quote . tweet-quote";
 }
 
-#text {
+.author { 
+    grid-area: author; 
+}
+
+.text { 
+    grid-area: quote; 
+}
+
+.new-quote { 
+    grid-area: new-quote; 
+}
+
+.tweet-quote { 
+    grid-area: tweet-quote; 
+}
+
+/*#text {
     position: relative;
     top: 30px;
     margin: 30px;
@@ -52,4 +73,4 @@ body {
     width: 640px;
     display: flex;
     justify-content: space-around;
-}
+}*/
