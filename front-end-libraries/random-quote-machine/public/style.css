@@ -1,0 +1,55 @@
+/* =================================================
+1 - Imported Fonts
+================================================= */
+
+
+/* =================================================
+2 - Global Properties
+================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    min-width: 690px;
+    min-height: 490px;
+}
+
+/* =================================================
+3 - Element-Specific Properties
+================================================= */
+
+#quote-box {
+    position: relative;
+    top: 120px;
+    margin: auto;
+    width: 640px;
+    height: 320px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, .2);
+}
+
+#text {
+    position: relative;
+    top: 30px;
+    margin: 30px;
+}
+
+#author {
+    position: relative;
+    top: 30px;
+    margin-right: 50px;
+    text-align: right;
+}
+
+#buttons {
+    position:fixed;
+    top: 400px;
+    width: 640px;
+    display: flex;
+    justify-content: space-around;
+}
