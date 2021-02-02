@@ -29,7 +29,11 @@ class App extends React.Component {
 
   render () {
     const random = Math.floor(Math.random() * quotesArr.length);
-    return this.randomQuote(random)
+    return (
+      <div id="wrapper">
+        {this.randomQuote(random)}
+      </div>
+    );
   }
 }
 
