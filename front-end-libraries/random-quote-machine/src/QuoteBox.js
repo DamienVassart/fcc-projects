@@ -12,18 +12,20 @@ class QuoteBox extends React.Component {
 
     render() {
         return (
-            <div id="quote-box" className="quote-box">
-                <blockquote id="text" className="text">
+            <div id="quote-box">
+                <blockquote id="text">
                     "{this.props.text}"
                 </blockquote>
-                <p id="author" className="author">
+                <p id="author">
                     -- {this.props.author}
                 </p>
-                <div id="buttons">
-                    <button id="new-quote" className="new-quote" onClick={this.props.newQuote}>
+                <div id="new-quote-wrapper">
+                    <button id="new-quote" onClick={this.props.newQuote}>
                         New Quote
                     </button>
-                    <a href={this.tweetQuote(this.props.text, this.props.author)} id="tweet-quote" className="tweet-quote" target="_blank" rel="noreferrer">
+                </div>
+                <div id="tweet-quote-wrapper">
+                    <a href={this.tweetQuote(this.props.text, this.props.author)} id="tweet-quote" target="_blank" rel="noreferrer">
                         <button>
                             Tweet Quote
                         </button>

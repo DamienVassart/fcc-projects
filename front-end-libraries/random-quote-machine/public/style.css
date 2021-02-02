@@ -22,55 +22,52 @@ body {
 3 - Element-Specific Properties
 ================================================= */
 
-.quote-box {
-    background-color: white;
-    position: relative;
-    top: 120px;
-    margin: auto;
-
-    display: grid;
-    grid-template-columns: 170px 200px 170px;
-    grid-template-rows: 160px 60px 100px;
-    gap: 0px 0px;
-    grid-template-areas:
-    "quote quote quote"
-    "author author author"
-    "new-quote . tweet-quote";
+#quote-box {
+	position: relative;
+	top: 120px;
+	width: 640px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 170px 300px 170px;
+	grid-template-rows: 200px 60px 60px;
+	grid-template-areas: 
+		"quote quote quote"
+		". . author"
+		"new-quote-wrapper . tweet-quote-wrapper";
+	background-color: white;
+	border-radius: 30px;
+	box-shadow: 0 30px 30px rgba(0,0,0,.2);
 }
 
-.author { 
-    grid-area: author; 
-}
+#text {
+	grid-area: quote;
+	display: flex;
+	align-items: center;
+	margin: 0 30px;
+	font-size: 1.4rem;
 
-.text { 
-    grid-area: quote; 
-}
-
-.new-quote { 
-    grid-area: new-quote; 
-}
-
-.tweet-quote { 
-    grid-area: tweet-quote; 
-}
-
-/*#text {
-    position: relative;
-    top: 30px;
-    margin: 30px;
 }
 
 #author {
-    position: relative;
-    top: 30px;
-    margin-right: 50px;
-    text-align: right;
+	grid-area: author;
+	font-size: 1.1rem;
+
 }
 
-#buttons {
-    position:fixed;
-    top: 400px;
-    width: 640px;
-    display: flex;
-    justify-content: space-around;
-}*/
+.wrapper {
+	display: flex;
+}
+
+#new-quote-wrapper {
+	grid-area: new-quote-wrapper;
+	justify-content: flex-end;
+}
+
+#new-quote, #tweet-quote {
+	height: 20px;
+}
+
+#tweet-quote-wrapper {
+	grid-area: tweet-quote-wrapper;
+	justify-content: flex-start;
+}
