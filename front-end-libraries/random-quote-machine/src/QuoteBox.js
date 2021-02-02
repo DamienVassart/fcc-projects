@@ -19,12 +19,12 @@ class QuoteBox extends React.Component {
                 <p id="author">
                     -- {this.props.author}
                 </p>
-                <div id="new-quote-wrapper">
+                <div id="new-quote-wrapper" className="wrapper">
                     <button id="new-quote" onClick={this.props.newQuote}>
                         New Quote
                     </button>
                 </div>
-                <div id="tweet-quote-wrapper">
+                <div id="tweet-quote-wrapper" className="wrapper">
                     <a href={this.tweetQuote(this.props.text, this.props.author)} id="tweet-quote" target="_blank" rel="noreferrer">
                         <button>
                             Tweet Quote

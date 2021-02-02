@@ -2,6 +2,8 @@
 1 - Imported Fonts
 ================================================= */
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 /* =================================================
 2 - Global Properties
@@ -43,15 +45,16 @@ body {
 	grid-area: quote;
 	display: flex;
 	align-items: center;
-	margin: 0 30px;
+    margin: 0 30px;
+    font-family: 'EB Garamond', serif;
 	font-size: 1.4rem;
-
+    text-align: center;
 }
 
 #author {
-	grid-area: author;
-	font-size: 1.1rem;
-
+    grid-area: author;
+    font-family: 'Lora', serif;
+	font-size: 0.8rem;
 }
 
 .wrapper {
