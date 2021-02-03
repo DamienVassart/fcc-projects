@@ -4,27 +4,19 @@ class QuoteBox extends React.Component {
     constructor(props) {
         super(props);
         this.tweetQuote = this.tweetQuote.bind(this);
-        this.setFontSize = this.setFontSize.bind(this);
     }
 
     tweetQuote(str1, str2) {
         return `https://twitter.com/intent/tweet?text="${str1}" (${str2})`;
     }
 
-    setFontSize(str, n) {
-        const coef = Math.sqrt(Math.ceil(100 / str.length));
-        const fontSize = ((coef <= 2 ? coef : 2) * (n / 100));
-        return {fontSize:  fontSize.toFixed(1) + 'rem'};
-    }
-
     render() {
         const text = this.props.text;
         const author = this.props.author;
-        const median = this.props.median;
-        console.log(this.setFontSize(text, median));
+        console.log(this.props.style.fontSize);
         return (
             <div id="quote-box">
-                <blockquote id="text" style={this.setFontSize(text, median)}>
+                <blockquote id="text" style={{fontSize: this.props.style.fontSize}}>
                 &ldquo;{text}&rdquo;
                 </blockquote>
                 <p id="author">
