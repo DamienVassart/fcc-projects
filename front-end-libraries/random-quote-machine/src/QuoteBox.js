@@ -25,7 +25,7 @@ class QuoteBox extends React.Component {
         return (
             <div id="quote-box">
                 <blockquote id="text" style={this.setFontSize(text, median)}>
-                    "{text}"
+                &ldquo;{text}&rdquo;
                 </blockquote>
                 <p id="author">
                     -- {author}
