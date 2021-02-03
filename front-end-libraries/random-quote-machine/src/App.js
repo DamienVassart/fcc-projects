@@ -47,12 +47,12 @@ class App extends React.Component {
     return (
       <div id="wrapper">
         <QuoteBox
-        text={text}
-        author={author}
-        newQuote={this.newQuote}
-        fontSize={this.setFontSize(text, median)}
-        colors={colors}
-      />
+          text={text}
+          author={author}
+          newQuote={this.newQuote}
+          fontSize={this.setFontSize(text, median)}
+          colors={colors}
+        />
       </div>
     );
   }
