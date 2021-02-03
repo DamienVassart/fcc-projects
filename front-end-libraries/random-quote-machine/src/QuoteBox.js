@@ -13,10 +13,9 @@ class QuoteBox extends React.Component {
     render() {
         const text = this.props.text;
         const author = this.props.author;
-        console.log(this.props.style.fontSize);
         return (
             <div id="quote-box">
-                <blockquote id="text" style={{fontSize: this.props.style.fontSize}}>
+                <blockquote id="text" style={{fontSize: this.props.fontSize, color: this.props.colors.textColor}}>
                 &ldquo;{text}&rdquo;
                 </blockquote>
                 <p id="author">

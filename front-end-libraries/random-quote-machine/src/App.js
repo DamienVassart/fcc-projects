@@ -13,64 +13,46 @@ const randomRange = (min, max) => Math.floor(Math.random() * (max - min) + min);
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.randomQuote = this.randomQuote.bind(this);
     this.newQuote = this.newQuote.bind(this);
-    this.randomColor = this.randomColor.bind(this);
-    this.setStyle = this.setStyle.bind(this);
-  }
-
-  randomQuote(n) {
-    const text = quotesArr[n].quote;
-    return (
-      <QuoteBox
-        text={text}
-        author={quotesArr[n].author}
-        newQuote={this.newQuote}
-        style={this.setStyle(text, median)}
-      />
-    )
+    this.setColors = this.setColors.bind(this);
+    this.setFontSize = this.setFontSize.bind(this);
   }
 
   newQuote() {
-    this.setState({tate: this.state});
+    this.setState({state: this.state});
   }
 
- randomColor() {
+  setColors() {
     let randomHue = randomRange(0, 360);
-    let bgColor = {
-      hue: randomHue,
-      sat: randomRange(50, 100),
-      lum: randomRange(0, 100)
+
+    return {
+      bgColor: `hsl(${randomHue}, ${randomRange(50, 100)}%, ${randomRange(0, 100)}%)`,
+      textColor: `hsl(${(randomHue + 120) % 360}, ${randomRange(50, 100)}%, ${randomRange(20, 50)}%)`,
+      btnColor: `hsl(${(randomHue + 240) % 360}, ${randomRange(50, 100)}%, ${randomRange(20, 50)}%)`
     };
-  
-    let textColor = {
-      hue: (randomHue + 120) % 360,
-      sat: randomRange(50, 100),
-      lum: randomRange(20, 50)
-    };
-  
-    let btnColor = {
-      hue: (randomHue + 240) % 360,
-      sat: randomRange(50, 100),
-      lum: randomRange(20, 50)
-    };
-    
-    return [bgColor, textColor, btnColor]; 
   }
 
-  setStyle(str, n) {
+  setFontSize(str, n) {
     const coef = Math.sqrt(Math.ceil(100 / str.length));
     const fontSize = ((coef <= 2 ? coef : 2) * (n / 100));
-    return {
-      fontSize:  fontSize.toFixed(1) + 'rem'
-    };
+    return fontSize.toFixed(1) + 'rem'
   }
 
   render () {
-    const random = Math.floor(Math.random() * quotesArr.length);
+    const n = Math.floor(Math.random() * quotesArr.length);
+    const text = quotesArr[n].quote;
+    const author = quotesArr[n].author;
+    const colors = this.setColors();
+    document.body.style.backgroundColor = colors.bgColor;
     return (
       <div id="wrapper">
-        {this.randomQuote(random)}
+        <QuoteBox
+        text={text}
+        author={author}
+        newQuote={this.newQuote}
+        fontSize={this.setFontSize(text, median)}
+        colors={colors}
+      />
       </div>
     );
   }
