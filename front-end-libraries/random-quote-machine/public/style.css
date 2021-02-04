@@ -31,9 +31,11 @@ button {
 	border: none;
 	color: white;
 	padding: 5px 10px;
-	border-radius: 3px;
+	border-radius: 20px;
 	display: flex;
-	align-content: center;
+	align-items: center;
+	background-image: linear-gradient(hsla(0, 0%, 100%, .25), hsla(0, 0%, 0%, 0));
+	font-size: 0.7em;
 }
 
 button img {

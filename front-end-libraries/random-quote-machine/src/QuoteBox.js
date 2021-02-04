@@ -29,7 +29,7 @@ class QuoteBox extends React.Component {
                 </p>
                 <div id="new-quote-wrapper" className="wrapper">
                     <button id="new-quote" onClick={this.props.newQuote} style={{backgroundColor: btnColor}}>
-                        <img src={refresh} alt="refresh" width="16px" height="16px" /> New Quote
+                        <img src={refresh} alt="refresh" width="15px" height="15px" /> New Quote
                     </button>
                 </div>
                 <div id="tweet-quote-wrapper" className="wrapper">
