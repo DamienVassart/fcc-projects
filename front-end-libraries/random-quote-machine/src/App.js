@@ -24,7 +24,7 @@ class App extends React.Component {
     let randomHue = randomRange(0, 360);
 
     return {
-      bgColor: `hsl(${randomHue}, ${randomRange(50, 100)}%, ${randomRange(0, 100)}%)`,
+      bgColor: `hsl(${randomHue}, ${randomRange(50, 100)}%, ${randomRange(20, 100)}%)`,
       textColor: `hsl(${(randomHue + 120) % 360}, ${randomRange(50, 100)}%, ${randomRange(20, 50)}%)`,
       btnColor: `hsl(${(randomHue + 240) % 360}, ${randomRange(50, 100)}%, ${randomRange(20, 50)}%)`
     };
