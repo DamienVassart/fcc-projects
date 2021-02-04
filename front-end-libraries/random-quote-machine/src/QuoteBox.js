@@ -1,5 +1,8 @@
 import React from "react"
 
+import twitterIcn from './assets/tw.png';
+import refresh from './assets/refresh.png'
+
 class QuoteBox extends React.Component {
     constructor(props) {
         super(props);
@@ -22,14 +25,14 @@ class QuoteBox extends React.Component {
                     -- {author}
                 </p>
                 <div id="new-quote-wrapper" className="wrapper">
-                    <button id="new-quote" onClick={this.props.newQuote}>
-                        New Quote
+                    <button id="new-quote" onClick={this.props.newQuote} style={{backgroundColor: this.props.colors.btnColor}}>
+                        <img src={refresh} alt="refresh" width="16px" height="16px" /> New Quote
                     </button>
                 </div>
                 <div id="tweet-quote-wrapper" className="wrapper">
                     <a href={this.tweetQuote(text, author)} id="tweet-quote" target="_blank" rel="noreferrer">
-                        <button>
-                            Tweet Quote
+                        <button style={{backgroundColor: this.props.colors.btnColor}}>
+                            <img src={twitterIcn} alt="twitter-icon" width="16px" height="16px"/> Tweet
                         </button>
                     </a>
                 </div>

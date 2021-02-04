@@ -23,6 +23,27 @@ body {
     min-height: 490px;
 }
 
+a {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 3px;
+	display: flex;
+	align-content: center;
+}
+
+button img {
+	margin-right: 5px;
+}
+
+button:focus {
+	outline: none;
+}
+
 /* =================================================
 3 - Element-Specific Properties
 ================================================= */
@@ -33,7 +54,7 @@ body {
 	width: 640px;
 	margin: auto;
 	display: grid;
-	grid-template-columns: 170px 300px 170px;
+	grid-template-columns: 200px 270px 170px;
 	grid-template-rows: 200px 60px 60px;
 	grid-template-areas: 
 		"quote quote quote"
@@ -71,8 +92,8 @@ body {
 	justify-content: flex-end;
 }
 
-#new-quote, #tweet-quote {
-	height: 20px;
+#new-quote {
+	height: 26px;
 }
 
 #tweet-quote-wrapper {

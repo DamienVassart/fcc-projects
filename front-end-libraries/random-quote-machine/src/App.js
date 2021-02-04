@@ -5,8 +5,6 @@ import QuoteBox from "./QuoteBox";
 import quotesData from "./assets/quotes"
 
 const quotesArr = quotesData.quotes
-const quotesLengths = quotesArr.map(e => e.quote.length);
-const median = Math.floor(Math.min(...quotesLengths) + (Math.max(...quotesLengths) - Math.min(...quotesLengths)) / 2);
 
 const randomRange = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
@@ -32,9 +30,9 @@ class App extends React.Component {
     };
   }
 
-  setFontSize(str, n) {
+  setFontSize(str) {
     const coef = Math.sqrt(Math.ceil(100 / str.length));
-    const fontSize = ((coef <= 2 ? coef : 2) * (n / 100));
+    const fontSize = ((coef <= 2 ? coef : 2) * 1.5);
     return fontSize.toFixed(1) + 'rem'
   }
 
@@ -50,7 +48,7 @@ class App extends React.Component {
           text={text}
           author={author}
           newQuote={this.newQuote}
-          fontSize={this.setFontSize(text, median)}
+          fontSize={this.setFontSize(text)}
           colors={colors}
         />
       </div>
