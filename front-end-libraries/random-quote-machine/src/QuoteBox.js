@@ -35,7 +35,7 @@ class QuoteBox extends React.Component {
                 <div id="tweet-quote-wrapper" className="wrapper">
                     <a href={this.tweetQuote(text, author)} id="tweet-quote" target="_blank" rel="noreferrer">
                         <button style={{backgroundColor: btnColor}}>
-                            <img src={twitterIcn} alt="twitter-icon" width="16px" height="16px"/> Tweet
+                            <img src={twitterIcn} alt="twitter-icon" width="16px" height="16px"/> Tweet It !
                         </button>
                     </a>
                 </div>
