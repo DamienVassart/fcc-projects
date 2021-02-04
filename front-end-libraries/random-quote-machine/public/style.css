@@ -21,7 +21,7 @@ html, body {
 body {
     min-width: 690px;
 	min-height: 490px;
-	transition: background-color 1s;
+	transition: background-color linear 1s;
 }
 
 a {
@@ -84,7 +84,6 @@ button img {
     margin: 0 30px;
     font-family: 'EB Garamond', serif;
 	text-align: center;
-	transition: color 1s;
 }
 
 #author {
@@ -112,4 +111,16 @@ button img {
 #tweet-quote-wrapper {
 	grid-area: tweet-quote-wrapper;
 	justify-content: flex-start;
+}
+
+.fade-in {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 1s, opacity 1s;
+}
+
+.fade-out {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 1s, opacity 1s;
 }
