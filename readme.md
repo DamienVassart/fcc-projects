@@ -18,3 +18,5 @@ My [profile](https://www.freecodecamp.org/damienvassart)<br>
 
 ### Front-End Libraries
 - Random Quote Machine - [Project Specs](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine) - [Live Demo](https://damienvassart.dev/portfolio/random-quote-machine/)
+
+Please contact me or send a pull request if any link is broken.
