@@ -5,7 +5,7 @@ My [profile](https://www.freecodecamp.org/damienvassart)<br>
 
 ### Responsive Web Design
 - Tribute Page - [Project Specs](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)
-- Survey Form - [Project Specs](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form) - [Libe Demo](https://damienvassart.dev/portfolio/survey-form/)
+- Survey Form - [Project Specs](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form) - [Live Demo](https://damienvassart.dev/portfolio/survey-form/)
 - Landing Page - [Project Specs](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page) - [Live Demo](https://damienvassart.dev/portfolio/landing-page/)
 - Documentation Page (in progress) - [Project Specs](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
 
