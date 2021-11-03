@@ -13,7 +13,7 @@ My [profile](https://www.freecodecamp.org/damienvassart)<br>
 - Palindrome Checker - [Project Specs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/palindrome-checker)
 - Roman Numeral Converter - [Project Specs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/roman-numeral-converter)
 - Caesars Cipher - [Project Specs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher)
-- Telephone Nimber Validator - [Project Specs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/telephone-number-validator)
+- Telephone Number Validator - [Project Specs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/telephone-number-validator)
 - Cash Register - [Project Specs](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register)
 
 ### Front-End Libraries
